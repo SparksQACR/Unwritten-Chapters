@@ -1,0 +1,282 @@
+[
+  {
+    "id": "partner_suggest_date",
+    "title": "{partner} Suggests a Date",
+    "description": "{partner} looks up from what they're doing with a hopeful expression. 'Hey, I was thinking... want to go on a date tonight? Just us?'",
+    "action_type": "initiative",
+    "roll_requirement": 9,
+    "effects_success": {"relationship": 3, "happiness": 2},
+    "effects_failure": {"relationship": 1, "happiness": 1},
+    "partner_choices": [
+      "Plan something elaborate and romantic",
+      "Suggest a low-key but meaningful outing",
+      "Offer to let you pick the activity"
+    ]
+  },
+  {
+    "id": "partner_check_in",
+    "title": "{partner} Checks On You",
+    "description": "{partner} sits down next to you and takes your hand. 'Hey. How are you really doing? I've been wanting to ask.'",
+    "action_type": "support",
+    "roll_requirement": 8,
+    "effects_success": {"relationship": 2, "stress": -2, "happiness": 1},
+    "effects_failure": {"relationship": 1},
+    "partner_choices": [
+      "Listen intently and follow up with thoughtful questions",
+      "Share their own feelings to create mutual vulnerability",
+      "Offer practical help with whatever's bothering you"
+    ]
+  },
+  {
+    "id": "partner_share_excitement",
+    "title": "{partner} Has News",
+    "description": "{partner} bursts into the room, barely containing themselves. 'Okay, okay, you have to hear this!' They're practically bouncing.",
+    "action_type": "share",
+    "roll_requirement": 7,
+    "effects_success": {"happiness": 3, "relationship": 2},
+    "effects_failure": {"happiness": 1, "relationship": 1},
+    "partner_choices": [
+      "Build the suspense and tell the story dramatically",
+      "Blurt it out immediately, too excited to wait",
+      "Make you guess first, enjoying the anticipation"
+    ]
+  },
+  {
+    "id": "partner_apologize",
+    "title": "{partner} Wants to Talk",
+    "description": "{partner} approaches you with a serious expression. 'Can we talk? I've been thinking about something and I need to say it.'",
+    "action_type": "communicate",
+    "roll_requirement": 11,
+    "effects_success": {"relationship": 4, "stress": -1, "personal_growth": 1},
+    "effects_failure": {"relationship": 1, "stress": 1},
+    "partner_choices": [
+      "Be direct and honest, even if it's hard",
+      "Start with reassurance before diving in",
+      "Ask what you need first, to understand better"
+    ]
+  },
+  {
+    "id": "partner_physical_affection",
+    "title": "{partner} Reaches for You",
+    "description": "{partner} crosses the room and wraps their arms around you from behind. No words, just holding you close.",
+    "action_type": "affection",
+    "roll_requirement": 7,
+    "effects_success": {"relationship": 3, "stress": -2, "happiness": 2},
+    "effects_failure": {"relationship": 2, "happiness": 1},
+    "partner_choices": [
+      "Hold on tight and not let go",
+      "Turn around and kiss you properly",
+      "Sway gently, turning it into a slow dance"
+    ]
+  },
+  {
+    "id": "partner_surprise_plan",
+    "title": "{partner} Has a Surprise",
+    "description": "{partner} is being suspiciously secretive. They keep checking their phone and smiling. 'Clear your evening,' they say mysteriously.",
+    "action_type": "initiative",
+    "roll_requirement": 10,
+    "effects_success": {"happiness": 4, "relationship": 3},
+    "effects_failure": {"happiness": 1, "relationship": 1},
+    "partner_choices": [
+      "Reveal the elaborate surprise they've planned",
+      "Keep up the mystery until the last second",
+      "Adjust plans based on your mood"
+    ]
+  },
+  {
+    "id": "partner_worry",
+    "title": "{partner} Is Concerned",
+    "description": "{partner} has been watching you with worried eyes. Finally, they speak up. 'I'm worried about you. You haven't seemed like yourself lately.'",
+    "action_type": "support",
+    "roll_requirement": 10,
+    "effects_success": {"relationship": 3, "stress": -3, "health": 1},
+    "effects_failure": {"relationship": 1, "stress": -1},
+    "partner_choices": [
+      "Push gently for you to open up",
+      "Offer to take things off your plate",
+      "Just be present without pressure"
+    ]
+  },
+  {
+    "id": "partner_playful_tease",
+    "title": "{partner} Starts Something",
+    "description": "{partner} has that mischievous glint in their eye. Before you know it, they've stolen your spot on the couch and are grinning at you defiantly.",
+    "action_type": "play",
+    "roll_requirement": 7,
+    "effects_success": {"happiness": 3, "relationship": 2, "stress": -2},
+    "effects_failure": {"happiness": 2, "relationship": 1},
+    "partner_choices": [
+      "Escalate into full playful war",
+      "Tackle them and reclaim your spot (with cuddles)",
+      "Pretend to be offended, badly hiding a smile"
+    ]
+  },
+  {
+    "id": "partner_share_fear",
+    "title": "{partner} Opens Up",
+    "description": "{partner} is quiet tonight, but not the comfortable kind. Finally, in a small voice: 'Can I tell you something I've never told anyone?'",
+    "action_type": "vulnerable",
+    "roll_requirement": 12,
+    "effects_success": {"relationship": 5, "personal_growth": 1},
+    "effects_failure": {"relationship": 2},
+    "partner_choices": [
+      "Share something deep and real",
+      "Test the waters with something smaller first",
+      "Ask you to share something too, so it's mutual"
+    ]
+  },
+  {
+    "id": "partner_make_food",
+    "title": "{partner} Makes Food",
+    "description": "You walk in to find {partner} in the kitchen, surrounded by ingredients. 'I'm making your favorite,' they announce. 'Sit. You're not allowed to help.'",
+    "action_type": "care",
+    "roll_requirement": 8,
+    "effects_success": {"happiness": 2, "relationship": 2, "health": 1},
+    "effects_failure": {"happiness": 1, "relationship": 1},
+    "partner_choices": [
+      "Cook with full focus and love",
+      "Chat with you while cooking",
+      "Put on music and make it an experience"
+    ]
+  },
+  {
+    "id": "partner_defend_you",
+    "title": "{partner} Has Your Back",
+    "description": "Someone said something about you - not to your face, but {partner} heard. They come to you, protective energy radiating. 'I handled it. Nobody talks about you like that.'",
+    "action_type": "protect",
+    "roll_requirement": 9,
+    "effects_success": {"relationship": 4, "confidence": 2},
+    "effects_failure": {"relationship": 2, "confidence": 1},
+    "partner_choices": [
+      "Tell you exactly what they said to defend you",
+      "Downplay it - you don't need to worry about those people",
+      "Ask how you want to handle things going forward"
+    ]
+  },
+  {
+    "id": "partner_random_compliment",
+    "title": "{partner} Notices You",
+    "description": "{partner} stops what they're doing and just... looks at you. 'You know what? You're really beautiful.' It's not a special occasion. They just wanted to say it.",
+    "action_type": "affirmation",
+    "roll_requirement": 6,
+    "effects_success": {"relationship": 2, "happiness": 2, "confidence": 1},
+    "effects_failure": {"relationship": 1, "happiness": 1},
+    "partner_choices": [
+      "Get specific about what they love about you",
+      "Get flustered and adorable about it",
+      "Follow up with an action, not just words"
+    ]
+  },
+  {
+    "id": "partner_suggest_adventure",
+    "title": "{partner} Wants Adventure",
+    "description": "{partner} pulls up something on their phone, eyes bright. 'Look at this! We should totally do this. What do you think? Say yes!'",
+    "action_type": "initiative",
+    "roll_requirement": 10,
+    "effects_success": {"happiness": 3, "relationship": 2, "personal_growth": 1},
+    "effects_failure": {"happiness": 1, "relationship": 1},
+    "partner_choices": [
+      "Dive into planning it together right now",
+      "Be flexible - adjust if you're hesitant",
+      "Get even more ambitious with the plan"
+    ]
+  },
+  {
+    "id": "partner_need_space",
+    "title": "{partner} Needs Time",
+    "description": "{partner} is a little withdrawn today. They're not upset with you - they make that clear - they just need some time to process something.",
+    "action_type": "communicate",
+    "roll_requirement": 9,
+    "effects_success": {"relationship": 2, "stress": -1},
+    "effects_failure": {"relationship": 0},
+    "partner_choices": [
+      "Explain what they need clearly and kindly",
+      "Check in periodically but give space",
+      "Come back to you when they're ready with full presence"
+    ]
+  },
+  {
+    "id": "partner_remember_detail",
+    "title": "{partner} Remembers",
+    "description": "{partner} brings you something small - a snack, a book, a trinket. 'You mentioned wanting this like three months ago. I finally found it.'",
+    "action_type": "care",
+    "roll_requirement": 7,
+    "effects_success": {"relationship": 4, "happiness": 3},
+    "effects_failure": {"relationship": 2, "happiness": 2},
+    "partner_choices": [
+      "Watch your reaction with pure joy",
+      "Explain the whole journey of finding it",
+      "Act casual like it's no big deal (it is)"
+    ]
+  },
+  {
+    "id": "partner_share_dream",
+    "title": "{partner} Dreams Out Loud",
+    "description": "Late at night, {partner} starts talking about the future. 'Sometimes I think about where we'll be in five years. Ten years. Growing old together.'",
+    "action_type": "vulnerable",
+    "roll_requirement": 10,
+    "effects_success": {"relationship": 4, "happiness": 2, "personal_growth": 1},
+    "effects_failure": {"relationship": 2, "happiness": 1},
+    "partner_choices": [
+      "Paint a vivid picture of your future together",
+      "Ask what you dream about for 'us'",
+      "Make a small promise about that future"
+    ]
+  },
+  {
+    "id": "partner_encourage_goal",
+    "title": "{partner} Believes In You",
+    "description": "You've been doubting yourself about something. {partner} sits you down. 'Hey. Look at me. You can do this. I've seen what you're capable of.'",
+    "action_type": "support",
+    "roll_requirement": 9,
+    "effects_success": {"confidence": 3, "relationship": 2, "stress": -1},
+    "effects_failure": {"confidence": 1, "relationship": 1},
+    "partner_choices": [
+      "Remind you of times you've succeeded",
+      "Offer to help you prepare or practice",
+      "Promise to be there no matter the outcome"
+    ]
+  },
+  {
+    "id": "partner_silly_mood",
+    "title": "{partner} Gets Silly",
+    "description": "{partner} is in a MOOD today. They're making faces, doing bits, trying everything to make you laugh. They will not rest until you're smiling.",
+    "action_type": "play",
+    "roll_requirement": 6,
+    "effects_success": {"happiness": 4, "relationship": 2, "stress": -3},
+    "effects_failure": {"happiness": 2, "relationship": 1, "stress": -1},
+    "partner_choices": [
+      "Go full commitment on the bit",
+      "Keep escalating until you both can't breathe",
+      "Give up and just hold you, laughing"
+    ]
+  },
+  {
+    "id": "partner_create_together",
+    "title": "{partner} Wants to Create",
+    "description": "{partner} has supplies spread out on the table. 'Come make something with me. It doesn't have to be good. Let's just make something together.'",
+    "action_type": "initiative",
+    "roll_requirement": 8,
+    "effects_success": {"happiness": 2, "relationship": 3, "personal_growth": 1},
+    "effects_failure": {"happiness": 1, "relationship": 2},
+    "partner_choices": [
+      "Focus on the process, not the result",
+      "Make it collaborative - one creation together",
+      "Turn it into a playful competition"
+    ]
+  },
+  {
+    "id": "partner_gratitude",
+    "title": "{partner} Says Thank You",
+    "description": "{partner} catches you at a quiet moment. 'I don't say this enough, but... thank you. For choosing me. For being here. For everything.'",
+    "action_type": "affirmation",
+    "roll_requirement": 7,
+    "effects_success": {"relationship": 4, "happiness": 3},
+    "effects_failure": {"relationship": 2, "happiness": 2},
+    "partner_choices": [
+      "Get specific about what they're grateful for",
+      "Get emotional and vulnerable about it",
+      "Follow words with a meaningful action"
+    ]
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "id": "complication_1",
+    "title": "Unexpected Expense",
+    "description": "Something breaks, needs repair, or you get hit with a surprise bill. Budget? What budget?",
+    "roll_requirement": 12,
+    "effects": {
+      "financial_stability": -2,
+      "stress": 2
+    },
+    "responses": [
+      "Figure out how to cover it together",
+      "Adjust your budget going forward",
+      "Try not to let financial stress hurt your relationship"
+    ]
+  },
+  {
+    "id": "complication_2",
+    "title": "Family Drama",
+    "description": "Family issues pull you in. Maybe conflict, crisis, or just complicated dynamics that affect your peace.",
+    "roll_requirement": 14,
+    "effects": {
+      "stress": 3,
+      "happiness": -1,
+      "relationship": -1
+    },
+    "responses": [
+      "Set boundaries where needed",
+      "Lean on your partner for support",
+      "Handle it without letting it consume you"
+    ]
+  },
+  {
+    "id": "complication_3",
+    "title": "Friend Crisis",
+    "description": "A friend is going through something difficult and needs you. Supporting them is draining but necessary.",
+    "roll_requirement": 11,
+    "effects": {
+      "stress": 2,
+      "social_connection": 1,
+      "happiness": -1
+    },
+    "responses": [
+      "Show up for them while protecting your own wellbeing",
+      "Include your partner in how to help",
+      "Balance compassion with boundaries"
+    ]
+  },
+  {
+    "id": "complication_4",
+    "title": "Work Drama",
+    "description": "Workplace conflict, difficult colleagues, or professional challenges are bleeding into your personal life.",
+    "roll_requirement": 13,
+    "effects": {
+      "stress": 3,
+      "happiness": -2,
+      "health": -1
+    },
+    "responses": [
+      "Don't bring it home if you can help it",
+      "Talk through it with your partner",
+      "Consider if changes need to be made"
+    ]
+  },
+  {
+    "id": "complication_5",
+    "title": "Technology Failure",
+    "description": "Your phone, computer, car, or essential device dies at the worst possible time. Modern life just got harder.",
+    "roll_requirement": 10,
+    "effects": {
+      "stress": 2,
+      "financial_stability": -1
+    },
+    "responses": [
+      "Deal with the inconvenience with humor",
+      "Figure out repair vs replacement",
+      "Appreciate the forced digital detox"
+    ]
+  },
+  {
+    "id": "complication_6",
+    "title": "Schedule Chaos",
+    "description": "Calendars collide, commitments conflict, and you're both stretched too thin. Something's gotta give.",
+    "roll_requirement": 12,
+    "effects": {
+      "stress": 3,
+      "relationship": -1,
+      "happiness": -1
+    },
+    "responses": [
+      "Prioritize ruthlessly",
+      "Communicate about what matters most",
+      "Make sure your relationship doesn't get lost in the chaos"
+    ]
+  },
+  {
+    "id": "complication_7",
+    "title": "Housing Issue",
+    "description": "Landlord problems, neighbor disputes, maintenance nightmares - your living situation is complicated right now.",
+    "roll_requirement": 13,
+    "effects": {
+      "stress": 2,
+      "financial_stability": -1,
+      "happiness": -1
+    },
+    "responses": [
+      "Address the issue head-on",
+      "Consider if it's time to move",
+      "Don't let it poison your home life"
+    ]
+  },
+  {
+    "id": "complication_8",
+    "title": "Identity Documents Drama",
+    "description": "Passport renewal, license issues, bureaucratic nightmares. The administrative side of life is biting you.",
+    "roll_requirement": 11,
+    "effects": {
+      "stress": 2
+    },
+    "responses": [
+      "Tackle it systematically",
+      "Ask your partner to help navigate it",
+      "Try to keep your sense of humor"
+    ]
+  },
+  {
+    "id": "complication_9",
+    "title": "Pet Emergency",
+    "description": "If you have pets, one needs urgent vet care. If not, you're asked to help with someone else's pet crisis.",
+    "roll_requirement": 12,
+    "effects": {
+      "stress": 3,
+      "financial_stability": -2,
+      "happiness": -1
+    },
+    "responses": [
+      "Do what's necessary for the animal",
+      "Support each other through the worry",
+      "Don't let the cost paralyze you"
+    ]
+  },
+  {
+    "id": "complication_10",
+    "title": "Double Booking",
+    "description": "You accidentally committed to two things at once, or made plans that now conflict. Awkwardness ensues.",
+    "roll_requirement": 10,
+    "effects": {
+      "stress": 1,
+      "social_connection": -1
+    },
+    "responses": [
+      "Apologize and resolve it honestly",
+      "Learn from the organizational failure",
+      "Don't beat yourself up too much"
+    ]
+  },
+  {
+    "id": "complication_11",
+    "title": "Lost or Stolen Item",
+    "description": "Something important goes missing or gets stolen. Wallet, keys, sentimental item - the loss stings.",
+    "roll_requirement": 13,
+    "effects": {
+      "stress": 2,
+      "financial_stability": -1,
+      "happiness": -1
+    },
+    "responses": [
+      "Report it and take necessary steps",
+      "Let your partner comfort you",
+      "Try to move forward without dwelling"
+    ]
+  },
+  {
+    "id": "complication_12",
+    "title": "Miscommunication Cascade",
+    "description": "One small miscommunication spirals into multiple problems. Messages crossed, assumptions made, chaos multiplied.",
+    "roll_requirement": 11,
+    "effects": {
+      "stress": 2,
+      "relationship": -1
+    },
+    "responses": [
+      "Slow down and clarify everything",
+      "Take responsibility for your part",
+      "Laugh about it once it's resolved"
+    ]
+  }
+]

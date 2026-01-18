@@ -1,0 +1,124 @@
+[
+  {
+    "id": "surprise_1",
+    "title": "Unexpected Gift",
+    "description": "You receive a thoughtful gift from someone special. It's something you mentioned wanting weeks ago.",
+    "roll_requirement": 12,
+    "effects": {
+      "happiness": 2,
+      "relationship": 1
+    },
+    "responses": [
+      "Express genuine gratitude and excitement",
+      "Wonder about what prompted the gift",
+      "Plan something special in return"
+    ]
+  },
+  {
+    "id": "surprise_2",
+    "title": "Found Money",
+    "description": "You discover money in an old jacket pocket - just when you needed it!",
+    "roll_requirement": 10,
+    "effects": {
+      "happiness": 1,
+      "financial_stability": 1
+    },
+    "responses": [
+      "Treat yourself to something small",
+      "Save it for a rainy day",
+      "Use it for something practical you've been putting off"
+    ]
+  },
+  {
+    "id": "surprise_3",
+    "title": "Spontaneous Adventure",
+    "description": "Your partner suggests a spontaneous road trip or adventure this weekend. No planning, just go!",
+    "roll_requirement": 14,
+    "effects": {
+      "happiness": 3,
+      "relationship": 2,
+      "stress": -1
+    },
+    "responses": [
+      "Enthusiastically say yes and start packing",
+      "Negotiate the details first",
+      "Suggest making it even more spontaneous"
+    ]
+  },
+  {
+    "id": "surprise_4",
+    "title": "Unexpected Compliment",
+    "description": "A stranger or colleague gives you a sincere, specific compliment that really brightens your day.",
+    "roll_requirement": 8,
+    "effects": {
+      "happiness": 1,
+      "confidence": 1
+    },
+    "responses": [
+      "Accept it graciously",
+      "Deflect with humor",
+      "Return a compliment"
+    ]
+  },
+  {
+    "id": "surprise_5",
+    "title": "Perfect Timing",
+    "description": "Everything just... works today. Green lights, no lines, perfect weather. The universe is on your side.",
+    "roll_requirement": 16,
+    "effects": {
+      "happiness": 2,
+      "stress": -2
+    },
+    "responses": [
+      "Enjoy the flow and stay grateful",
+      "Use the extra time for something special",
+      "Share the good vibes with your partner"
+    ]
+  },
+  {
+    "id": "surprise_6",
+    "title": "Reunion",
+    "description": "You unexpectedly run into an old friend you've lost touch with. The conversation picks up like no time has passed.",
+    "roll_requirement": 11,
+    "effects": {
+      "happiness": 2,
+      "social_connection": 2
+    },
+    "responses": [
+      "Make plans to stay in touch this time",
+      "Reminisce about old times",
+      "Introduce them to your current life"
+    ]
+  },
+  {
+    "id": "surprise_7",
+    "title": "Creative Breakthrough",
+    "description": "Inspiration strikes! You have a brilliant idea for a project, solution to a problem, or creative work.",
+    "roll_requirement": 13,
+    "effects": {
+      "happiness": 2,
+      "confidence": 1,
+      "personal_growth": 1
+    },
+    "responses": [
+      "Drop everything and pursue it immediately",
+      "Write it down and plan it properly",
+      "Share it with your partner for feedback"
+    ]
+  },
+  {
+    "id": "surprise_8",
+    "title": "Unexpected Day Off",
+    "description": "Your commitments get cancelled and you suddenly have a free day. What will you do with this gift of time?",
+    "roll_requirement": 12,
+    "effects": {
+      "happiness": 2,
+      "stress": -2
+    },
+    "responses": [
+      "Spend it entirely with your partner",
+      "Catch up on rest and self-care",
+      "Do all the things you've been putting off"
+    ]
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "id": "disaster_1",
+    "title": "Major Storm",
+    "description": "A severe storm hits your area. Power outages, flooding risk, and you're stuck inside together.",
+    "roll_requirement": 13,
+    "effects": {
+      "stress": 2,
+      "financial_stability": -1
+    },
+    "responses": [
+      "Make the best of it with your partner",
+      "Prepare and stay safe",
+      "Help neighbors who might need it"
+    ]
+  },
+  {
+    "id": "disaster_2",
+    "title": "Heatwave",
+    "description": "Extreme heat makes everything difficult. AC struggles, energy bills soar, and everyone's tempers are short.",
+    "roll_requirement": 11,
+    "effects": {
+      "stress": 2,
+      "health": -1,
+      "financial_stability": -1
+    },
+    "responses": [
+      "Find creative ways to stay cool",
+      "Check on vulnerable neighbors",
+      "Take it easy and stay hydrated"
+    ]
+  },
+  {
+    "id": "disaster_3",
+    "title": "Earthquake/Tremor",
+    "description": "The ground shakes unexpectedly. Even if minor, it's unsettling and reminds you how fragile stability can be.",
+    "roll_requirement": 14,
+    "effects": {
+      "stress": 3,
+      "health": -1
+    },
+    "responses": [
+      "Check on each other and process the fear",
+      "Review your emergency preparedness",
+      "Find comfort in being together"
+    ]
+  },
+  {
+    "id": "disaster_4",
+    "title": "Wildfire Smoke",
+    "description": "Distant wildfires fill the air with smoke. The sky is orange, breathing is difficult, and you can't go outside.",
+    "roll_requirement": 12,
+    "effects": {
+      "health": -2,
+      "stress": 2,
+      "happiness": -1
+    },
+    "responses": [
+      "Seal up the house and use air filtration",
+      "Support those directly affected",
+      "Find indoor ways to stay sane"
+    ]
+  },
+  {
+    "id": "disaster_5",
+    "title": "Flood Warning",
+    "description": "Heavy rains bring flood warnings. You might need to evacuate or move belongings to higher ground.",
+    "roll_requirement": 15,
+    "effects": {
+      "stress": 3,
+      "financial_stability": -2
+    },
+    "responses": [
+      "Prepare and evacuate if necessary",
+      "Protect what you can",
+      "Lean on each other through the uncertainty"
+    ]
+  },
+  {
+    "id": "disaster_6",
+    "title": "Tornado Warning",
+    "description": "Tornado sirens wail. You need to take shelter immediately. The fear is real.",
+    "roll_requirement": 16,
+    "effects": {
+      "stress": 4,
+      "health": -1
+    },
+    "responses": [
+      "Get to safety and stay calm",
+      "Hold each other through the fear",
+      "Be grateful when it passes"
+    ]
+  },
+  {
+    "id": "disaster_7",
+    "title": "Blizzard",
+    "description": "A massive snowstorm traps you at home. Roads are impassable, supplies might run low.",
+    "roll_requirement": 12,
+    "effects": {
+      "stress": 2,
+      "financial_stability": -1
+    },
+    "responses": [
+      "Bundle up and make it cozy",
+      "Check on isolated neighbors",
+      "Turn it into quality time together"
+    ]
+  },
+  {
+    "id": "disaster_8",
+    "title": "Drought Impact",
+    "description": "Prolonged drought affects your water supply, garden, and community. Conservation becomes critical.",
+    "roll_requirement": 13,
+    "effects": {
+      "stress": 2,
+      "financial_stability": -1
+    },
+    "responses": [
+      "Adapt your lifestyle and conserve water",
+      "Support community solutions",
+      "Find gratitude for what you have"
+    ]
+  },
+  {
+    "id": "disaster_9",
+    "title": "Hurricane/Typhoon",
+    "description": "A major hurricane is bearing down. Evacuation orders, boarding up, the full disaster prep drill.",
+    "roll_requirement": 17,
+    "effects": {
+      "stress": 4,
+      "financial_stability": -2,
+      "health": -1
+    },
+    "responses": [
+      "Follow evacuation orders and stay safe",
+      "Protect what you can, accept what you can't",
+      "Face the crisis together as a team"
+    ]
+  },
+  {
+    "id": "disaster_10",
+    "title": "Power Grid Failure",
+    "description": "A widespread power outage lasts for days. No electricity, limited communication, growing uncertainty.",
+    "roll_requirement": 14,
+    "effects": {
+      "stress": 3,
+      "financial_stability": -1
+    },
+    "responses": [
+      "Pool resources and help each other",
+      "Appreciate simpler times together",
+      "Stay informed and patient"
+    ]
+  }
+]

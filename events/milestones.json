@@ -1,0 +1,164 @@
+[
+  {
+    "id": "milestone_1",
+    "title": "Anniversary",
+    "description": "It's an anniversary of when you met, got together, or another significant milestone in your relationship.",
+    "roll_requirement": 8,
+    "effects": {
+      "relationship": 2,
+      "happiness": 3
+    },
+    "responses": [
+      "Celebrate meaningfully together",
+      "Reflect on how far you've come",
+      "Make new memories to cherish"
+    ]
+  },
+  {
+    "id": "milestone_2",
+    "title": "Personal Achievement",
+    "description": "You accomplish something you've been working toward for a long time. The hard work paid off!",
+    "roll_requirement": 12,
+    "effects": {
+      "confidence": 3,
+      "happiness": 2,
+      "personal_growth": 2
+    },
+    "responses": [
+      "Celebrate with your partner",
+      "Reflect on what you learned",
+      "Set your sights on the next goal"
+    ]
+  },
+  {
+    "id": "milestone_3",
+    "title": "Moving In Together",
+    "description": "You're taking the step to share a living space. Exciting and nerve-wracking in equal measure!",
+    "roll_requirement": 14,
+    "effects": {
+      "relationship": 3,
+      "stress": 2,
+      "happiness": 2,
+      "financial_stability": -1
+    },
+    "responses": [
+      "Communicate about expectations and habits",
+      "Make the space feel like 'ours'",
+      "Be patient with the adjustment period"
+    ]
+  },
+  {
+    "id": "milestone_4",
+    "title": "Career Breakthrough",
+    "description": "A major career advancement - promotion, new job, successful project launch. Your professional life levels up!",
+    "roll_requirement": 15,
+    "effects": {
+      "confidence": 2,
+      "financial_stability": 2,
+      "happiness": 2,
+      "stress": 1
+    },
+    "responses": [
+      "Share the success with your partner",
+      "Adjust to new responsibilities",
+      "Celebrate this achievement"
+    ]
+  },
+  {
+    "id": "milestone_5",
+    "title": "First Big Trip Together",
+    "description": "Your first major trip as a couple. New places, new experiences, deeper connection.",
+    "roll_requirement": 11,
+    "effects": {
+      "relationship": 2,
+      "happiness": 3,
+      "financial_stability": -2
+    },
+    "responses": [
+      "Embrace the adventure together",
+      "Create lasting memories",
+      "Learn how you travel together"
+    ]
+  },
+  {
+    "id": "milestone_6",
+    "title": "Financial Milestone",
+    "description": "You hit a financial goal - paid off debt, saved a target amount, made a smart investment. Financial freedom feels closer!",
+    "roll_requirement": 13,
+    "effects": {
+      "financial_stability": 3,
+      "stress": -2,
+      "confidence": 2,
+      "happiness": 2
+    },
+    "responses": [
+      "Celebrate responsibly",
+      "Set the next financial goal",
+      "Appreciate the discipline it took"
+    ]
+  },
+  {
+    "id": "milestone_7",
+    "title": "Creative Accomplishment",
+    "description": "You complete a creative project you're proud of - writing, art, music, whatever feeds your soul.",
+    "roll_requirement": 12,
+    "effects": {
+      "happiness": 3,
+      "confidence": 2,
+      "personal_growth": 2
+    },
+    "responses": [
+      "Share it with your partner and others",
+      "Feel proud of your creation",
+      "Start thinking about the next project"
+    ]
+  },
+  {
+    "id": "milestone_8",
+    "title": "Overcoming a Fear",
+    "description": "You face and overcome something that scared you. Personal courage unlocked!",
+    "roll_requirement": 14,
+    "effects": {
+      "confidence": 3,
+      "personal_growth": 3,
+      "happiness": 2
+    },
+    "responses": [
+      "Acknowledge your bravery",
+      "Share the experience with your partner",
+      "Consider what else you might tackle"
+    ]
+  },
+  {
+    "id": "milestone_9",
+    "title": "Community Impact",
+    "description": "You make a meaningful difference in your community through volunteering, activism, or helping others.",
+    "roll_requirement": 11,
+    "effects": {
+      "happiness": 2,
+      "social_connection": 2,
+      "personal_growth": 1
+    },
+    "responses": [
+      "Feel the fulfillment of service",
+      "Inspire your partner to join you",
+      "Continue making a difference"
+    ]
+  },
+  {
+    "id": "milestone_10",
+    "title": "Learning Achievement",
+    "description": "You master a new skill, complete a course, or reach a learning goal you set for yourself.",
+    "roll_requirement": 12,
+    "effects": {
+      "confidence": 2,
+      "personal_growth": 3,
+      "happiness": 1
+    },
+    "responses": [
+      "Apply your new knowledge",
+      "Share what you learned",
+      "Keep the learning momentum going"
+    ]
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "id": "relationship_1",
+    "title": "Communication Gap",
+    "description": "You and {partner} seem to be talking past each other lately. Small misunderstandings are piling up.",
+    "roll_requirement": 13,
+    "effects": {
+      "relationship": -1,
+      "stress": 1
+    },
+    "responses": [
+      "Initiate a calm, honest conversation about it",
+      "Give each other some space to reset",
+      "Suggest trying a new communication approach together"
+    ]
+  },
+  {
+    "id": "relationship_2",
+    "title": "Different Needs",
+    "description": "One of you needs alone time while the other wants connection. {partner} and you are trying to find the balance.",
+    "roll_requirement": 14,
+    "effects": {
+      "relationship": -1,
+      "stress": 1
+    },
+    "responses": [
+      "Compromise and schedule both quality time and solo time",
+      "Talk openly about what you each need and why",
+      "Find a creative solution that honors both needs"
+    ]
+  },
+  {
+    "id": "relationship_3",
+    "title": "Unexpected Intimacy",
+    "description": "A moment of unexpected vulnerability with {partner} deepens your bond in a beautiful way.",
+    "roll_requirement": 10,
+    "effects": {
+      "relationship": 3,
+      "happiness": 2
+    },
+    "responses": [
+      "Fully embrace the moment and share openly",
+      "Express gratitude for the connection",
+      "Build on this momentum"
+    ]
+  },
+  {
+    "id": "relationship_4",
+    "title": "Old Wound Resurfaces",
+    "description": "Something triggers a past hurt or unresolved issue between you and {partner}. It needs addressing, not avoiding.",
+    "roll_requirement": 15,
+    "effects": {
+      "relationship": -2,
+      "stress": 2
+    },
+    "responses": [
+      "Address it head-on with compassion",
+      "Seek to understand before being understood",
+      "Consider if you need outside help to work through it"
+    ]
+  },
+  {
+    "id": "relationship_5",
+    "title": "Shared Joy",
+    "description": "You and {partner} discover something you love doing together - a new shared interest or activity that lights you both up.",
+    "roll_requirement": 11,
+    "effects": {
+      "relationship": 2,
+      "happiness": 2
+    },
+    "responses": [
+      "Make it a regular thing in your lives",
+      "Explore it deeper together",
+      "Celebrate finding this connection"
+    ]
+  },
+  {
+    "id": "relationship_6",
+    "title": "Growing Pains",
+    "description": "You and {partner} are both changing and growing. It's healthy, but it means adjusting how you relate to each other.",
+    "roll_requirement": 14,
+    "effects": {
+      "relationship": -1,
+      "personal_growth": 1,
+      "stress": 1
+    },
+    "responses": [
+      "Talk about how you're each evolving",
+      "Make sure you're growing together, not apart",
+      "Embrace the change as a positive thing"
+    ]
+  },
+  {
+    "id": "relationship_7",
+    "title": "Little Gestures",
+    "description": "{partner} does small, thoughtful things that show they really know and care about you.",
+    "roll_requirement": 9,
+    "effects": {
+      "relationship": 2,
+      "happiness": 1
+    },
+    "responses": [
+      "Notice and appreciate each gesture",
+      "Reciprocate with your own thoughtful acts",
+      "Tell them how much it means to you"
+    ]
+  },
+  {
+    "id": "relationship_8",
+    "title": "Different Visions",
+    "description": "You and {partner} have different ideas about something important for your shared future. Time to navigate this.",
+    "roll_requirement": 16,
+    "effects": {
+      "relationship": -2,
+      "stress": 2
+    },
+    "responses": [
+      "Have an honest conversation about both visions",
+      "Look for common ground and compromise",
+      "Consider getting perspective from someone you trust"
+    ]
+  },
+  {
+    "id": "relationship_9",
+    "title": "Laughing Together",
+    "description": "You and {partner} share a moment of pure, uncontrollable laughter together. Nothing feels better than this.",
+    "roll_requirement": 8,
+    "effects": {
+      "relationship": 2,
+      "happiness": 2,
+      "stress": -1
+    },
+    "responses": [
+      "Savor this feeling of joy",
+      "Remind yourself why you love this person",
+      "Keep the playfulness going"
+    ]
+  },
+  {
+    "id": "relationship_10",
+    "title": "External Pressure",
+    "description": "Outside stress (work, family, etc.) is affecting your relationship with {partner}. You're both stretched thin.",
+    "roll_requirement": 13,
+    "effects": {
+      "relationship": -1,
+      "stress": 2
+    },
+    "responses": [
+      "Make your relationship a priority despite the stress",
+      "Support each other through the difficult time",
+      "Find small ways to stay connected"
+    ]
+  },
+  {
+    "id": "relationship_11",
+    "title": "Date Night with {partner}",
+    "description": "{partner} suggests a special date night - just the two of you, no distractions, pure quality time.",
+    "roll_requirement": 10,
+    "effects": {
+      "relationship": 3,
+      "happiness": 2,
+      "stress": -1
+    },
+    "responses": [
+      "Plan something romantic and meaningful",
+      "Let them surprise you with their plans",
+      "Suggest something adventurous and new"
+    ]
+  },
+  {
+    "id": "relationship_12",
+    "title": "Family Meeting",
+    "description": "It's time for a household check-in with {partner}. How is everyone feeling? What needs attention?",
+    "group_event": true,
+    "roll_requirement": 11,
+    "effects": {
+      "relationship": 1,
+      "household_harmony": 2
+    },
+    "responses": [
+      "Lead with vulnerability about your own needs",
+      "Focus on listening more than talking",
+      "Suggest concrete actions to address any issues"
+    ]
+  }
+]

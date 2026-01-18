@@ -1,0 +1,227 @@
+[
+  {
+    "id": "distance_arc",
+    "title": "Growing Apart",
+    "stages": [
+      {
+        "stage": 1,
+        "title": "Something Feels Off",
+        "description": "{partner} seems distant lately. Not cold, just... elsewhere. You catch them staring into space more often.",
+        "roll_requirement": 12,
+        "effects": {"relationship": -1, "stress": 1},
+        "responses": [
+          "Ask them directly what's going on",
+          "Give them space to process",
+          "Plan something special to reconnect"
+        ],
+        "next_stage_delay": 2
+      },
+      {
+        "stage": 2,
+        "title": "The Conversation",
+        "description": "You and {partner} finally talk about what's been brewing. It's not easy, but it's necessary.",
+        "roll_requirement": 14,
+        "effects": {"relationship": -2, "stress": 2},
+        "responses": [
+          "Listen without getting defensive",
+          "Share your own feelings honestly",
+          "Suggest working on this together"
+        ],
+        "next_stage_delay": 3
+      },
+      {
+        "stage": 3,
+        "title": "Crossroads",
+        "description": "After days of tension and talking, you and {partner} reach a decision point. This could go either way.",
+        "roll_requirement": 15,
+        "effects_success": {"relationship": 5, "stress": -3, "personal_growth": 2},
+        "effects_failure": {"relationship": -5, "stress": 3},
+        "responses": [
+          "Commit to real changes together",
+          "Accept that some things need to end",
+          "Take a break to figure things out"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "career_arc",
+    "title": "Big Opportunity",
+    "stages": [
+      {
+        "stage": 1,
+        "title": "The Offer",
+        "description": "A major career opportunity lands in your lap. It's exciting but would mean big changes for your life together with {partner}.",
+        "roll_requirement": 11,
+        "effects": {"happiness": 2, "stress": 2},
+        "responses": [
+          "Excitedly share the news with them",
+          "Think it over before bringing it up",
+          "Discuss the implications together"
+        ],
+        "next_stage_delay": 2
+      },
+      {
+        "stage": 2,
+        "title": "The Decision",
+        "description": "You need to decide whether to take the opportunity. {partner} has thoughts, and so do you.",
+        "roll_requirement": 13,
+        "effects": {"stress": 3},
+        "responses": [
+          "Prioritize the relationship",
+          "Take the opportunity and adapt",
+          "Find a creative compromise"
+        ],
+        "next_stage_delay": 3
+      },
+      {
+        "stage": 3,
+        "title": "The Aftermath",
+        "description": "Whatever you decided, life moves forward. Time to see how this plays out.",
+        "roll_requirement": 12,
+        "effects_success": {"happiness": 3, "financial_stability": 3, "relationship": 2},
+        "effects_failure": {"stress": 2, "relationship": -2},
+        "responses": [
+          "Embrace the new chapter fully",
+          "Mourn what could have been",
+          "Focus on what you have"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "trust_arc",
+    "title": "Trust Tested",
+    "stages": [
+      {
+        "stage": 1,
+        "title": "A Misunderstanding",
+        "description": "Something happened that made {partner} question your intentions. It wasn't what it looked like, but the doubt is there.",
+        "roll_requirement": 13,
+        "effects": {"relationship": -2, "stress": 2},
+        "responses": [
+          "Explain immediately and openly",
+          "Give them space to calm down first",
+          "Show them proof of your innocence"
+        ],
+        "next_stage_delay": 1
+      },
+      {
+        "stage": 2,
+        "title": "Rebuilding",
+        "description": "The air is clearer but trust takes time. {partner} is watching, processing, deciding whether to fully let this go.",
+        "roll_requirement": 14,
+        "effects": {"relationship": -1, "stress": 1},
+        "responses": [
+          "Be patient and consistently present",
+          "Have a deeper conversation about fears",
+          "Propose ways to prevent future misunderstandings"
+        ],
+        "next_stage_delay": 4
+      },
+      {
+        "stage": 3,
+        "title": "Resolution",
+        "description": "Time has passed. The question is whether this made you stronger or left lasting cracks.",
+        "roll_requirement": 13,
+        "effects_success": {"relationship": 4, "personal_growth": 2, "stress": -2},
+        "effects_failure": {"relationship": -3, "stress": 2},
+        "responses": [
+          "Acknowledge the growth this brought",
+          "Accept that some scars remain",
+          "Commit to deeper communication going forward"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health_arc",
+    "title": "Health Scare",
+    "stages": [
+      {
+        "stage": 1,
+        "title": "The Symptom",
+        "description": "Something's wrong with your health. It might be nothing, but it needs to be checked out. {partner} is worried.",
+        "roll_requirement": 10,
+        "effects": {"health": -2, "stress": 3},
+        "responses": [
+          "Schedule an appointment immediately",
+          "Try not to worry until you know more",
+          "Lean on your partner for support"
+        ],
+        "next_stage_delay": 2
+      },
+      {
+        "stage": 2,
+        "title": "Waiting for Answers",
+        "description": "Tests are done. Now you wait. {partner} is by your side, but the uncertainty is brutal.",
+        "roll_requirement": 12,
+        "effects": {"stress": 4, "relationship": 1},
+        "responses": [
+          "Distract yourself with normal life",
+          "Talk about fears with your partner",
+          "Prepare for any outcome"
+        ],
+        "next_stage_delay": 3
+      },
+      {
+        "stage": 3,
+        "title": "The Results",
+        "description": "The results are in. Whatever they say, you and {partner} will face it together.",
+        "roll_requirement": 14,
+        "effects_success": {"health": 3, "stress": -4, "relationship": 3, "happiness": 3},
+        "effects_failure": {"health": -3, "stress": 3, "relationship": 2},
+        "responses": [
+          "Celebrate or process together",
+          "Make lifestyle changes either way",
+          "Be grateful for each other"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "moving_arc",
+    "title": "New Beginnings",
+    "stages": [
+      {
+        "stage": 1,
+        "title": "The Possibility",
+        "description": "The idea of moving somewhere new comes up. A fresh start with {partner}? It's terrifying and exciting.",
+        "roll_requirement": 11,
+        "effects": {"happiness": 1, "stress": 2},
+        "responses": [
+          "Start researching together",
+          "List pros and cons",
+          "Visit potential new places"
+        ],
+        "next_stage_delay": 3
+      },
+      {
+        "stage": 2,
+        "title": "Making It Real",
+        "description": "The decision is made. Now comes the chaos of actually moving. {partner} and you are in this together.",
+        "roll_requirement": 14,
+        "effects": {"stress": 4, "financial_stability": -2},
+        "responses": [
+          "Divide and conquer the tasks",
+          "Hire help to reduce stress",
+          "Focus on the adventure ahead"
+        ],
+        "next_stage_delay": 5
+      },
+      {
+        "stage": 3,
+        "title": "New Home",
+        "description": "You're here. New place, same love. Time to build a life in this new space with {partner}.",
+        "roll_requirement": 12,
+        "effects_success": {"happiness": 4, "relationship": 3, "stress": -3, "social_connection": -2},
+        "effects_failure": {"stress": 2, "relationship": -1, "happiness": -2},
+        "responses": [
+          "Make the space truly yours together",
+          "Explore your new neighborhood",
+          "Create new routines and traditions"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "id": "career_1",
+    "title": "Imposter Syndrome",
+    "description": "You feel like a fraud at work, like you don't deserve your position or success. The doubt is overwhelming.",
+    "roll_requirement": 13,
+    "effects": {
+      "confidence": -2,
+      "stress": 2,
+      "happiness": -1
+    },
+    "responses": [
+      "Talk to your partner about these feelings",
+      "Remind yourself of your actual achievements",
+      "Consider if you need professional support"
+    ]
+  },
+  {
+    "id": "career_2",
+    "title": "Difficult Boss",
+    "description": "Your manager is making work life challenging - micromanaging, unclear expectations, or just personality clash.",
+    "roll_requirement": 14,
+    "effects": {
+      "stress": 3,
+      "happiness": -2
+    },
+    "responses": [
+      "Try to address it professionally",
+      "Document issues in case you need them",
+      "Consider your options and timeline"
+    ]
+  },
+  {
+    "id": "career_3",
+    "title": "Exciting Opportunity",
+    "description": "A new opportunity appears - job offer, project, or chance to pivot. Exciting but requires a big decision.",
+    "roll_requirement": 12,
+    "effects": {
+      "stress": 2,
+      "confidence": 1,
+      "happiness": 1
+    },
+    "responses": [
+      "Discuss it thoroughly with your partner",
+      "Weigh the pros and cons carefully",
+      "Trust your instincts about what feels right"
+    ]
+  },
+  {
+    "id": "career_4",
+    "title": "Recognition",
+    "description": "Your work is recognized and appreciated. Praise, awards, or acknowledgment that feels genuinely earned.",
+    "roll_requirement": 10,
+    "effects": {
+      "confidence": 2,
+      "happiness": 2
+    },
+    "responses": [
+      "Accept it graciously",
+      "Share the win with your partner",
+      "Let it motivate you forward"
+    ]
+  },
+  {
+    "id": "career_5",
+    "title": "Burnout Creeping",
+    "description": "Work is demanding too much. Long hours, high pressure, no work-life balance. Something's got to change.",
+    "roll_requirement": 15,
+    "effects": {
+      "health": -2,
+      "stress": 3,
+      "happiness": -2,
+      "relationship": -1
+    },
+    "responses": [
+      "Set firmer boundaries at work",
+      "Talk to your partner about the toll it's taking",
+      "Consider whether this job is sustainable"
+    ]
+  },
+  {
+    "id": "career_6",
+    "title": "Passion Project",
+    "description": "You get to work on something you actually care about. The work feels meaningful and energizing.",
+    "roll_requirement": 11,
+    "effects": {
+      "happiness": 3,
+      "confidence": 1,
+      "stress": -1
+    },
+    "responses": [
+      "Pour yourself into it",
+      "Share your excitement with your partner",
+      "Protect time for this meaningful work"
+    ]
+  },
+  {
+    "id": "career_7",
+    "title": "Job Insecurity",
+    "description": "Layoffs, restructuring, or just a sense that your position isn't secure. The uncertainty is stressful.",
+    "roll_requirement": 14,
+    "effects": {
+      "stress": 4,
+      "financial_stability": -1,
+      "happiness": -2
+    },
+    "responses": [
+      "Update your resume and network",
+      "Talk honestly with your partner about backup plans",
+      "Try to stay productive without panicking"
+    ]
+  },
+  {
+    "id": "career_8",
+    "title": "Mentor Connection",
+    "description": "You connect with someone who can guide your career growth. Their wisdom and support feel invaluable.",
+    "roll_requirement": 10,
+    "effects": {
+      "confidence": 2,
+      "personal_growth": 2,
+      "social_connection": 1
+    },
+    "responses": [
+      "Make the most of this relationship",
+      "Be open to their guidance",
+      "Consider how you might mentor others too"
+    ]
+  },
+  {
+    "id": "career_9",
+    "title": "Skill Gap",
+    "description": "You realize you're missing skills needed for where you want to go. Time to level up, but how?",
+    "roll_requirement": 12,
+    "effects": {
+      "confidence": -1,
+      "stress": 2
+    },
+    "responses": [
+      "Make a learning plan",
+      "Discuss with your partner how to make time for it",
+      "See it as opportunity, not failure"
+    ]
+  },
+  {
+    "id": "career_10",
+    "title": "Work-Life Win",
+    "description": "You successfully negotiate better hours, remote work, or some other improvement to your work-life balance!",
+    "roll_requirement": 13,
+    "effects": {
+      "happiness": 3,
+      "stress": -2,
+      "relationship": 1
+    },
+    "responses": [
+      "Celebrate this victory",
+      "Use the improved balance wisely",
+      "Appreciate having advocated for yourself"
+    ]
+  }
+]

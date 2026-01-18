@@ -1,0 +1,160 @@
+[
+  {
+    "id": "health_1",
+    "title": "Mystery Symptom",
+    "description": "You're experiencing an unusual symptom that's concerning. Time to figure out what's going on.",
+    "roll_requirement": 12,
+    "effects": {
+      "health": -1,
+      "stress": 2
+    },
+    "responses": [
+      "Schedule a doctor's appointment",
+      "Research it first (carefully!)",
+      "Talk to your partner about your concerns"
+    ]
+  },
+  {
+    "id": "health_2",
+    "title": "Energy Surge",
+    "description": "You wake up feeling incredibly energized and healthy. Your body is firing on all cylinders!",
+    "roll_requirement": 10,
+    "effects": {
+      "health": 2,
+      "happiness": 1,
+      "stress": -1
+    },
+    "responses": [
+      "Use this energy for something active",
+      "Tackle your to-do list with enthusiasm",
+      "Share the good vibes with others"
+    ]
+  },
+  {
+    "id": "health_3",
+    "title": "Burnout Warning",
+    "description": "Your body is sending signals: fatigue, irritability, poor sleep. You're running on fumes.",
+    "roll_requirement": 14,
+    "effects": {
+      "health": -2,
+      "stress": 2,
+      "happiness": -1
+    },
+    "responses": [
+      "Take immediate steps to rest and recover",
+      "Reassess your commitments and boundaries",
+      "Talk to your partner about supporting you through this"
+    ]
+  },
+  {
+    "id": "health_4",
+    "title": "Fitness Milestone",
+    "description": "You achieve a personal fitness goal or notice you're genuinely getting stronger/healthier!",
+    "roll_requirement": 11,
+    "effects": {
+      "health": 2,
+      "confidence": 2,
+      "happiness": 1
+    },
+    "responses": [
+      "Celebrate this achievement",
+      "Set a new goal to work toward",
+      "Inspire your partner to join you"
+    ]
+  },
+  {
+    "id": "health_5",
+    "title": "Mental Health Dip",
+    "description": "You're struggling with anxiety, depression, or just feeling off. Your mental health needs attention.",
+    "roll_requirement": 13,
+    "effects": {
+      "health": -2,
+      "happiness": -2,
+      "stress": 1
+    },
+    "responses": [
+      "Reach out for professional support",
+      "Be honest with your partner about what you're experiencing",
+      "Practice self-compassion and take it one day at a time"
+    ]
+  },
+  {
+    "id": "health_6",
+    "title": "Injury",
+    "description": "You injure yourself - maybe while exercising, doing chores, or just through bad luck. It's going to slow you down.",
+    "roll_requirement": 13,
+    "effects": {
+      "health": -2,
+      "stress": 1
+    },
+    "responses": [
+      "Follow proper recovery protocols",
+      "Accept help from your partner",
+      "Find ways to stay positive during recovery"
+    ]
+  },
+  {
+    "id": "health_7",
+    "title": "Sleep Breakthrough",
+    "description": "After struggling with sleep, you finally get a solid night's rest. Everything feels clearer.",
+    "roll_requirement": 9,
+    "effects": {
+      "health": 2,
+      "stress": -2,
+      "happiness": 1
+    },
+    "responses": [
+      "Protect this sleep routine",
+      "Notice how much better you feel",
+      "Make sleep a priority going forward"
+    ]
+  },
+  {
+    "id": "health_8",
+    "title": "Stress Manifestation",
+    "description": "Stress is showing up physically - headaches, stomach issues, tension. Your body is telling you something.",
+    "roll_requirement": 12,
+    "effects": {
+      "health": -1,
+      "stress": 2
+    },
+    "responses": [
+      "Address the root cause of the stress",
+      "Try stress-management techniques",
+      "Talk to your partner about what's weighing on you"
+    ]
+  },
+  {
+    "id": "health_9",
+    "title": "Chronic Condition Flare",
+    "description": "If you have a chronic condition, it's flaring up. If not, an old injury is acting up again.",
+    "roll_requirement": 14,
+    "effects": {
+      "health": -2,
+      "stress": 2,
+      "happiness": -1
+    },
+    "responses": [
+      "Manage it with your established strategies",
+      "Adjust your expectations and pace",
+      "Let your partner help and support you"
+    ]
+  },
+  {
+    "id": "health_10",
+    "title": "Wellness Groove",
+    "description": "Everything is clicking: good sleep, healthy eating, regular movement, mental clarity. You're in a great health rhythm!",
+    "roll_requirement": 15,
+    "effects": {
+      "health": 3,
+      "happiness": 2,
+      "stress": -1,
+      "confidence": 1
+    },
+    "responses": [
+      "Maintain this beautiful balance",
+      "Share your wellness approach with others",
+      "Feel grateful for your body and mind"
+    ]
+  }
+]

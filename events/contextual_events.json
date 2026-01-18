@@ -1,0 +1,1192 @@
+[
+  {
+    "id": "weather_rainy_cuddles",
+    "title": "Rainy Day In",
+    "description": "The rain patters against the windows as you and {partner} decide to stay in. They pull you onto the couch, wrapping a blanket around you both.",
+    "conditions": {"weather": ["rainy", "stormy"]},
+    "roll_requirement": 8,
+    "effects": {"relationship": 3, "happiness": 2, "stress": -2},
+    "responses": [
+      "Snuggle closer and enjoy the sound of rain",
+      "Suggest making hot cocoa together",
+      "Put on a movie neither of you have seen"
+    ]
+  },
+  {
+    "id": "weather_storm_anxiety",
+    "title": "Storm Nerves",
+    "description": "The thunder rumbles loudly and {partner} flinches. They're trying to play it cool, but you can see the tension in their shoulders.",
+    "conditions": {"weather": ["stormy"], "partner_traits": ["anxious"]},
+    "roll_requirement": 11,
+    "effects": {"stress": 2, "relationship": -1},
+    "effects_success": {"relationship": 3, "stress": -1},
+    "responses": [
+      "Hold them close without making a big deal of it",
+      "Distract them with their favorite activity",
+      "Acknowledge their fear and sit with them through it"
+    ]
+  },
+  {
+    "id": "weather_sunny_adventure",
+    "title": "Perfect Day Out",
+    "description": "The sun is shining, the weather is perfect, and {partner} has that look in their eyes - the one that means adventure.",
+    "conditions": {"weather": ["sunny", "perfect"]},
+    "roll_requirement": 9,
+    "effects": {"happiness": 3, "relationship": 2, "stress": -1},
+    "responses": [
+      "Grab your keys and see where the day takes you",
+      "Suggest that hiking trail you've been meaning to try",
+      "Pack a picnic and find a nice spot"
+    ]
+  },
+  {
+    "id": "weather_snow_magic",
+    "title": "First Snow",
+    "description": "{partner} is at the window, face lit up like a kid. 'It's snowing!' They grab your hand. 'Come outside with me!'",
+    "conditions": {"weather": ["snowy"]},
+    "roll_requirement": 8,
+    "effects": {"happiness": 3, "relationship": 2},
+    "responses": [
+      "Rush outside with them immediately",
+      "Grab coats first, then join their excitement",
+      "Watch from the window together, wrapped up warm"
+    ]
+  },
+  {
+    "id": "mood_partner_sad_comfort",
+    "title": "Something's Wrong",
+    "description": "{partner} has been quiet all day. When you find them, their eyes are red. They haven't said anything, but something is clearly weighing on them.",
+    "conditions": {"partner_mood": ["sad"]},
+    "roll_requirement": 12,
+    "effects": {"relationship": -1, "stress": 1},
+    "effects_success": {"relationship": 4, "stress": -1},
+    "responses": [
+      "Sit with them in silence, just being present",
+      "Gently ask if they want to talk about it",
+      "Make them tea and give them space to open up"
+    ]
+  },
+  {
+    "id": "mood_partner_stressed_help",
+    "title": "Overwhelmed",
+    "description": "{partner} is spiraling. You can see it - the pacing, the short breaths, the way they can't seem to focus on anything. They need you right now.",
+    "conditions": {"partner_mood": ["stressed"]},
+    "roll_requirement": 13,
+    "effects": {"relationship": -1, "stress": 2},
+    "effects_success": {"relationship": 3, "stress": -2},
+    "responses": [
+      "Take something off their plate without asking",
+      "Guide them through a breathing exercise",
+      "Get them out of their head with physical comfort"
+    ]
+  },
+  {
+    "id": "mood_partner_happy_share",
+    "title": "Contagious Joy",
+    "description": "{partner} is practically glowing today. Their happiness is infectious, and they keep finding excuses to be near you, share little jokes, steal kisses.",
+    "conditions": {"partner_mood": ["happy", "excited"]},
+    "roll_requirement": 7,
+    "effects": {"happiness": 3, "relationship": 2, "stress": -1},
+    "responses": [
+      "Match their energy and be ridiculous together",
+      "Ask what's got them so happy",
+      "Just bask in their sunshine"
+    ]
+  },
+  {
+    "id": "mood_partner_excited_news",
+    "title": "Big News",
+    "description": "{partner} bursts through the door, unable to contain themselves. 'You're never going to believe this!' Whatever it is, they're vibrating with excitement.",
+    "conditions": {"partner_mood": ["excited"]},
+    "roll_requirement": 8,
+    "effects": {"happiness": 2, "relationship": 2},
+    "responses": [
+      "Drop everything and give them your full attention",
+      "Match their excitement before you even know what it is",
+      "Pull them close and demand they tell you everything"
+    ]
+  },
+  {
+    "id": "stat_player_low_health",
+    "title": "Under the Weather",
+    "description": "You wake up feeling terrible. {partner} notices immediately - they have that worried look, the one where they're already planning how to take care of you.",
+    "conditions": {"player_stat": {"health": {"max": 35}}},
+    "roll_requirement": 10,
+    "effects": {"health": -2, "stress": 2},
+    "effects_success": {"health": 3, "relationship": 2, "stress": -1},
+    "responses": [
+      "Let them fuss over you",
+      "Insist you're fine (you're not)",
+      "Ask them to just stay close"
+    ]
+  },
+  {
+    "id": "stat_player_high_stress",
+    "title": "Breaking Point",
+    "description": "Everything is too much. The noise, the demands, the endless to-do list. {partner} finds you staring at nothing, overwhelmed. They don't say anything at first, just sits next to you.",
+    "conditions": {"player_stat": {"stress": {"min": 70}}},
+    "roll_requirement": 14,
+    "effects": {"stress": 3, "happiness": -2},
+    "effects_success": {"stress": -5, "relationship": 3, "happiness": 2},
+    "responses": [
+      "Finally let yourself break down",
+      "Let them help you prioritize what actually matters",
+      "Ask for help, even though it's hard"
+    ]
+  },
+  {
+    "id": "stat_player_low_happiness",
+    "title": "Gray Days",
+    "description": "Nothing feels right lately. {partner} has noticed - of course they have. They're trying, in their way, to reach you through the fog.",
+    "conditions": {"player_stat": {"happiness": {"max": 30}}},
+    "roll_requirement": 13,
+    "effects": {"happiness": -1, "relationship": -1},
+    "effects_success": {"happiness": 4, "relationship": 2, "personal_growth": 1},
+    "responses": [
+      "Open up about how you've been feeling",
+      "Accept their comfort even if it feels undeserved",
+      "Try to do one small thing that used to bring joy"
+    ]
+  },
+  {
+    "id": "stat_high_relationship_depth",
+    "title": "Knowing Glance",
+    "description": "You're across a crowded room when your eyes meet {partner}'s. Without a word, you both know exactly what the other is thinking. The connection is electric.",
+    "conditions": {"relationship": {"min": 75}},
+    "roll_requirement": 7,
+    "effects": {"relationship": 2, "happiness": 2},
+    "responses": [
+      "Make your way to them immediately",
+      "Hold their gaze and smile",
+      "Mouth 'I love you' across the room"
+    ]
+  },
+  {
+    "id": "stat_low_relationship_distance",
+    "title": "Growing Distance",
+    "description": "When did you and {partner} start feeling like roommates? The easy intimacy has been replaced with polite distance. Tonight, you're both home but somehow miles apart.",
+    "conditions": {"relationship": {"max": 35}},
+    "roll_requirement": 15,
+    "effects": {"relationship": -2, "happiness": -2, "stress": 2},
+    "effects_success": {"relationship": 3, "stress": -1},
+    "responses": [
+      "Break the silence and ask what's happening",
+      "Suggest doing something you used to love together",
+      "Write them a letter about how you're feeling"
+    ]
+  },
+  {
+    "id": "season_winter_cozy",
+    "title": "Winter Nesting",
+    "description": "The cold outside makes inside feel even cozier. {partner} has turned your space into a warm haven - blankets everywhere, candles lit, something warm cooking.",
+    "conditions": {"season": "winter"},
+    "roll_requirement": 8,
+    "effects": {"happiness": 2, "relationship": 2, "stress": -2},
+    "responses": [
+      "Appreciate the effort out loud",
+      "Add to the coziness with your own touch",
+      "Pull them into the nest they've created"
+    ]
+  },
+  {
+    "id": "season_spring_renewal",
+    "title": "Fresh Start Energy",
+    "description": "Something about spring makes everything feel possible. {partner} suggests starting something new together - a garden, a project, a goal. Their optimism is catching.",
+    "conditions": {"season": "spring"},
+    "roll_requirement": 9,
+    "effects": {"happiness": 2, "personal_growth": 1},
+    "responses": [
+      "Embrace the energy and commit to something",
+      "Suggest combining it with one of your own ideas",
+      "Channel it into improving something in your lives"
+    ]
+  },
+  {
+    "id": "season_summer_spontaneous",
+    "title": "Summer Spontaneity",
+    "description": "It's too hot to think too hard. {partner} suggests doing something completely unplanned - just getting in the car and driving, or finding water somewhere, anything.",
+    "conditions": {"season": "summer"},
+    "roll_requirement": 8,
+    "effects": {"happiness": 3, "stress": -2},
+    "responses": [
+      "Say yes immediately",
+      "Grab snacks and sunscreen",
+      "Suggest the lake you've always wanted to visit"
+    ]
+  },
+  {
+    "id": "season_fall_reflection",
+    "title": "Autumn Reflection",
+    "description": "Walking through falling leaves, {partner} gets contemplative. They start talking about where they thought they'd be by now, and where they actually are. It's vulnerable and real.",
+    "conditions": {"season": "fall"},
+    "roll_requirement": 10,
+    "effects": {"relationship": 2, "personal_growth": 1},
+    "responses": [
+      "Share your own reflections",
+      "Remind them of how far they've come",
+      "Just listen and hold space for them"
+    ]
+  },
+  {
+    "id": "energy_low_spoons",
+    "title": "Running on Empty",
+    "description": "You have nothing left today. {partner} can see it - the exhaustion isn't just physical. They're figuring out how to adjust the day around your empty tank.",
+    "conditions": {"energy": {"max": 30}},
+    "roll_requirement": 11,
+    "effects": {"stress": 2, "health": -1},
+    "effects_success": {"stress": -2, "relationship": 2},
+    "responses": [
+      "Accept their help without guilt",
+      "Be honest about what you can and can't do",
+      "Ask for a low-key day together"
+    ]
+  },
+  {
+    "id": "energy_high_productive",
+    "title": "On Fire Today",
+    "description": "You woke up with energy to spare. {partner} notices you're practically bouncing off the walls and suggests channeling it into something together.",
+    "conditions": {"energy": {"min": 90}},
+    "roll_requirement": 8,
+    "effects": {"happiness": 2, "personal_growth": 1},
+    "responses": [
+      "Tackle that project you've been putting off",
+      "Use the energy for something fun instead",
+      "Do something physically active together"
+    ]
+  },
+  {
+    "id": "love_lang_words_needed",
+    "title": "Words Unspoken",
+    "description": "{partner} has been quieter than usual. You realize it's been a while since you told them how much they mean to you - really told them, not just assumed they knew.",
+    "conditions": {"partner_love_language": "words"},
+    "roll_requirement": 10,
+    "effects": {"relationship": 1},
+    "effects_success": {"relationship": 4, "happiness": 2},
+    "responses": [
+      "Write them a heartfelt note",
+      "Tell them specifically what you love about them",
+      "Thank them for something they did recently"
+    ]
+  },
+  {
+    "id": "love_lang_acts_notice",
+    "title": "Actions Speak",
+    "description": "{partner} has been doing so much lately - little things you almost didn't notice. The dishes, the errands, the ways they've been making your life easier without asking for credit.",
+    "conditions": {"partner_love_language": "acts"},
+    "roll_requirement": 9,
+    "effects": {"relationship": 2},
+    "effects_success": {"relationship": 3, "happiness": 1},
+    "responses": [
+      "Acknowledge everything they've been doing",
+      "Take something off their plate in return",
+      "Do something for them they've been putting off"
+    ]
+  },
+  {
+    "id": "love_lang_touch_reach",
+    "title": "Physical Reconnection",
+    "description": "It's been a busy week with little physical contact. {partner} keeps finding excuses to be near you, their hand brushing yours, standing closer than necessary. They need touch.",
+    "conditions": {"partner_love_language": "touch"},
+    "roll_requirement": 8,
+    "effects": {"relationship": 2},
+    "effects_success": {"relationship": 4, "stress": -1},
+    "responses": [
+      "Pull them into a long, tight hug",
+      "Initiate an extended cuddle session",
+      "Take their hand and don't let go"
+    ]
+  },
+  {
+    "id": "love_lang_time_together",
+    "title": "Quality Time Craving",
+    "description": "You've been around each other, but not really together - phones out, distracted, parallel but not connected. {partner} puts their phone down and looks at you. 'Can we just... be together?'",
+    "conditions": {"partner_love_language": "time"},
+    "roll_requirement": 9,
+    "effects": {"relationship": 1},
+    "effects_success": {"relationship": 4, "happiness": 2},
+    "responses": [
+      "Put everything away and give them your full presence",
+      "Suggest an activity with no distractions",
+      "Create a phones-free zone for the evening"
+    ]
+  },
+  {
+    "id": "love_lang_gifts_thoughtful",
+    "title": "Small Gesture",
+    "description": "You see something small that reminds you of {partner}. It's not expensive or fancy, but it's so them. You could get it, just because.",
+    "conditions": {"partner_love_language": "gifts"},
+    "roll_requirement": 8,
+    "effects": {"financial_stability": -1},
+    "effects_success": {"relationship": 4, "happiness": 2},
+    "responses": [
+      "Get it without overthinking",
+      "Take a photo and save the idea for later",
+      "Get it plus a note explaining why it made you think of them"
+    ]
+  },
+  {
+    "id": "trait_introvert_space",
+    "title": "Needing Space",
+    "description": "{partner} has been around people all day and you can see they're drained. They love you, but right now they need quiet. The question is whether to give them space or offer silent companionship.",
+    "conditions": {"partner_traits": ["introvert"]},
+    "roll_requirement": 10,
+    "effects": {"relationship": 0},
+    "effects_success": {"relationship": 3, "stress": -1},
+    "responses": [
+      "Give them space and do your own thing",
+      "Sit nearby but don't require interaction",
+      "Ask what they need right now"
+    ]
+  },
+  {
+    "id": "trait_extrovert_energy",
+    "title": "Social Butterfly",
+    "description": "{partner} is buzzing with social energy. They want to call friends, make plans, be around people. Your couch sounds better, but their eyes are bright with excitement.",
+    "conditions": {"partner_traits": ["extrovert"]},
+    "roll_requirement": 10,
+    "effects": {"stress": 1},
+    "effects_success": {"relationship": 2, "social_connection": 2},
+    "responses": [
+      "Agree to one social thing, with a time limit",
+      "Encourage them to go while you recharge",
+      "Match their energy and dive into plans"
+    ]
+  },
+  {
+    "id": "trait_anxious_support",
+    "title": "Anxiety Spiral",
+    "description": "{partner}'s anxiety is loud today. You can see it in the way they're checking things twice, the questions that don't have answers they'll accept, the tension in their body.",
+    "conditions": {"partner_traits": ["anxious"]},
+    "roll_requirement": 13,
+    "effects": {"stress": 2, "relationship": -1},
+    "effects_success": {"relationship": 4, "stress": -2},
+    "responses": [
+      "Don't try to fix it, just be there",
+      "Offer grounding techniques that work for them",
+      "Validate their feelings without feeding the anxiety"
+    ]
+  },
+  {
+    "id": "trait_romantic_gesture",
+    "title": "Grand Gesture",
+    "description": "{partner} has been dropping hints about wanting more romance in your lives. Not necessarily big things - just moments that feel special, intentional, chosen.",
+    "conditions": {"partner_traits": ["romantic"]},
+    "roll_requirement": 11,
+    "effects": {"relationship": 1},
+    "effects_success": {"relationship": 5, "happiness": 3},
+    "responses": [
+      "Plan a surprise date for them",
+      "Create a romantic moment right now",
+      "Ask what would make them feel romanced"
+    ]
+  },
+  {
+    "id": "household_harmony_low",
+    "title": "Tension at Home",
+    "description": "The energy in your shared space has been off lately. Little annoyances piling up, unspoken frustrations, the sense that something needs to give.",
+    "conditions": {"player_stat": {"household_harmony": {"max": 35}}},
+    "roll_requirement": 14,
+    "effects": {"household_harmony": -2, "stress": 2},
+    "effects_success": {"household_harmony": 5, "stress": -2},
+    "responses": [
+      "Call a household meeting to clear the air",
+      "Address the elephant in the room directly",
+      "Suggest a reset - start fresh with new agreements"
+    ]
+  },
+  {
+    "id": "household_harmony_high",
+    "title": "Home Sweet Home",
+    "description": "Everything just works lately. The rhythms of your shared life feel synchronized, the space feels peaceful, everyone seems content. It's worth noticing.",
+    "conditions": {"player_stat": {"household_harmony": {"min": 75}}},
+    "roll_requirement": 7,
+    "effects": {"happiness": 2, "relationship": 1, "stress": -1},
+    "responses": [
+      "Express appreciation for how good things are",
+      "Do something to celebrate the harmony",
+      "Simply enjoy the peace"
+    ]
+  },
+  {
+    "id": "financial_stress",
+    "title": "Money Worries",
+    "description": "The bank account is looking rough and {partner} has noticed. Money stress is creeping into everything, making small decisions feel huge.",
+    "conditions": {"player_stat": {"financial_stability": {"max": 30}}},
+    "roll_requirement": 14,
+    "effects": {"stress": 3, "relationship": -1},
+    "effects_success": {"stress": -1, "relationship": 2, "financial_stability": 2},
+    "responses": [
+      "Sit down and make a realistic budget together",
+      "Brainstorm ways to bring in extra income",
+      "Find free activities to enjoy while things are tight"
+    ]
+  },
+  {
+    "id": "financial_comfort",
+    "title": "Treating Yourselves",
+    "description": "For once, money isn't a worry. {partner} suggests doing something you've been putting off - a nice dinner, a small trip, something that feels like a treat.",
+    "conditions": {"player_stat": {"financial_stability": {"min": 70}}},
+    "roll_requirement": 8,
+    "effects": {"happiness": 2, "financial_stability": -3, "relationship": 2},
+    "responses": [
+      "Go for it - you've earned this",
+      "Save most but splurge a little",
+      "Invest in something meaningful instead"
+    ]
+  },
+  {
+    "id": "backstory_dream_surface",
+    "title": "Dreams Remembered",
+    "description": "Something triggers a conversation about the future. {partner} gets quiet for a moment, then shares something they've always wanted but never said out loud before.",
+    "conditions": {"backstory_unrevealed": true},
+    "roll_requirement": 10,
+    "effects": {"relationship": 2, "personal_growth": 1},
+    "responses": [
+      "Really listen without trying to solve it",
+      "Share one of your own hidden dreams",
+      "Ask how you can support that dream"
+    ]
+  },
+  {
+    "id": "conflict_style_mismatch",
+    "title": "Different Approaches",
+    "description": "You're trying to work through something together, but your approaches are clashing. One of you wants to talk it out now, the other needs space. Neither is wrong, but it's hard.",
+    "conditions": {"conflict_active": true},
+    "roll_requirement": 14,
+    "effects": {"relationship": -2, "stress": 2},
+    "effects_success": {"relationship": 3, "stress": -1, "personal_growth": 1},
+    "responses": [
+      "Find a middle ground between your styles",
+      "Take a break with a set time to revisit",
+      "Focus on understanding before being understood"
+    ]
+  },
+  {
+    "id": "support_network_check_in",
+    "title": "Friend Reaches Out",
+    "description": "Your phone buzzes - it's {support_person}. They haven't heard from you in a while and want to check in. Having people who care about you feels good.",
+    "conditions": {"has_support_network": true},
+    "roll_requirement": 8,
+    "effects": {"social_connection": 2, "happiness": 1},
+    "responses": [
+      "Call them back and catch up properly",
+      "Make plans to see them soon",
+      "Send a heartfelt text about how much they mean to you"
+    ]
+  },
+  {
+    "id": "inside_joke_triggered",
+    "title": "Remember When...",
+    "description": "Something reminds you both of {inside_joke}. You catch {partner}'s eye and both of you lose it - laughing so hard at something no one else would understand.",
+    "conditions": {"has_inside_jokes": true},
+    "roll_requirement": 6,
+    "effects": {"happiness": 3, "relationship": 2, "stress": -2},
+    "responses": [
+      "Let the laughter take you",
+      "Tell the story again anyway",
+      "Add a new layer to the joke"
+    ]
+  },
+  {
+    "id": "goal_progress_together",
+    "title": "Working Toward It",
+    "description": "You and {partner} make real progress on your shared goal today. It feels good to build something together, to have this thing that's just yours.",
+    "conditions": {"has_active_goal": true},
+    "roll_requirement": 9,
+    "effects": {"relationship": 2, "happiness": 1},
+    "goal_progress": 5,
+    "responses": [
+      "Celebrate the milestone together",
+      "Talk about what reaching the goal will feel like",
+      "Double down and do even more"
+    ]
+  },
+  {
+    "id": "metamour_bonding",
+    "title": "Metamour Moment",
+    "description": "{partner1} and {partner2} are getting along beautifully today. Watching them laugh together, support each other - it fills your heart in a way you didn't expect.",
+    "conditions": {"has_metamours": true, "metamour_relationship": {"min": 60}},
+    "roll_requirement": 8,
+    "effects": {"household_harmony": 3, "happiness": 2},
+    "responses": [
+      "Join in their moment",
+      "Express how happy it makes you to see",
+      "Give them space to bond"
+    ]
+  },
+  {
+    "id": "metamour_tension",
+    "title": "Metamour Friction",
+    "description": "There's tension between {partner1} and {partner2}. Nothing explosive, but you can feel the friction. They're both trying, but something's off.",
+    "conditions": {"has_metamours": true, "metamour_relationship": {"max": 40}},
+    "roll_requirement": 15,
+    "effects": {"household_harmony": -3, "stress": 2},
+    "effects_success": {"household_harmony": 2, "stress": -1},
+    "responses": [
+      "Talk to each of them separately first",
+      "Facilitate a conversation between them",
+      "Give it space to resolve naturally"
+    ]
+  },
+  {
+    "id": "surprise_planning",
+    "title": "Secret Plans",
+    "description": "You've been planning something special for {partner}. Today you finalize the details. The anticipation of seeing their reaction is almost as good as the surprise itself.",
+    "conditions": {"can_surprise": true},
+    "roll_requirement": 9,
+    "effects": {"happiness": 1},
+    "effects_success": {"happiness": 2},
+    "triggers_surprise": true,
+    "responses": [
+      "Add one more special touch",
+      "Keep it simple but meaningful",
+      "Loop in someone to help execute it"
+    ]
+  },
+  {
+    "id": "weather_cloudy_melancholy",
+    "title": "Gray Sky Feelings",
+    "description": "The clouds hang low and heavy. {partner} is staring out the window, somewhere between thoughtful and sad. These gray days bring out something contemplative in them.",
+    "conditions": {"weather": ["cloudy", "overcast"]},
+    "roll_requirement": 10,
+    "effects": {"happiness": -1},
+    "effects_success": {"relationship": 2, "personal_growth": 1},
+    "responses": [
+      "Join them at the window and ask what they're thinking",
+      "Make something warm and sit with them",
+      "Let the quiet be comfortable between you"
+    ]
+  },
+  {
+    "id": "weather_fog_mystery",
+    "title": "Fog World",
+    "description": "The fog is so thick you can barely see the neighbors. {partner} grabs your hand. 'Let's walk in it. I want to feel like we're the only people in the world.'",
+    "conditions": {"weather": ["foggy"]},
+    "roll_requirement": 9,
+    "effects": {"happiness": 2, "relationship": 2},
+    "responses": [
+      "Walk hand in hand into the mist",
+      "Find a spot to sit and watch the world disappear",
+      "Tell them ghost stories to make them cling closer"
+    ]
+  },
+  {
+    "id": "weather_heat_tempers",
+    "title": "Too Damn Hot",
+    "description": "The heat is oppressive and everyone's patience is thin. {partner} snaps at you over something small, immediately looks guilty. It's not about you - it's the heat.",
+    "conditions": {"weather": ["hot", "humid"]},
+    "roll_requirement": 12,
+    "effects": {"stress": 2, "relationship": -1},
+    "effects_success": {"relationship": 2, "stress": -1},
+    "responses": [
+      "Don't take it personally - suggest finding AC",
+      "Make them a cold drink as a peace offering",
+      "Propose a drive with the windows down"
+    ]
+  },
+  {
+    "id": "weather_first_warm_day",
+    "title": "Spring Breakthrough",
+    "description": "After weeks of cold, the sun finally has warmth in it. {partner} practically drags you outside, face tilted toward the light. 'We survived winter!'",
+    "conditions": {"weather": ["warm", "sunny"], "season": "spring"},
+    "roll_requirement": 7,
+    "effects": {"happiness": 4, "stress": -2, "relationship": 2},
+    "responses": [
+      "Celebrate being alive and warm",
+      "Make spontaneous outdoor plans",
+      "Just stand in the sun together and breathe"
+    ]
+  },
+  {
+    "id": "weather_perfect_fall",
+    "title": "Sweater Weather",
+    "description": "Crisp air, golden light, the smell of leaves. {partner} shows up wearing your favorite sweater of theirs. 'It's the perfect fall day. We have to do something.'",
+    "conditions": {"weather": ["perfect", "cool"], "season": "fall"},
+    "roll_requirement": 8,
+    "effects": {"happiness": 3, "relationship": 2},
+    "responses": [
+      "Apple cider and a drive through the colors",
+      "Walk through piles of leaves like kids",
+      "Find a pumpkin patch or farmer's market"
+    ]
+  },
+  {
+    "id": "mood_partner_angry_careful",
+    "title": "Anger Management",
+    "description": "{partner} is furious - not at you, but at the world. They're pacing, venting, their energy crackling. They need to get this out.",
+    "conditions": {"partner_mood": ["angry", "frustrated"]},
+    "roll_requirement": 12,
+    "effects": {"stress": 2},
+    "effects_success": {"relationship": 3, "stress": -2},
+    "responses": [
+      "Let them vent without trying to fix it",
+      "Offer to go punch pillows or scream together",
+      "Wait for the storm to pass, then hold them"
+    ]
+  },
+  {
+    "id": "mood_partner_tired_gentle",
+    "title": "Running on Empty",
+    "description": "{partner} is exhausted - the bone-deep kind. They're going through motions but there's no spark. They need gentleness right now.",
+    "conditions": {"partner_mood": ["tired", "exhausted"]},
+    "roll_requirement": 10,
+    "effects": {"relationship": 1},
+    "effects_success": {"relationship": 3, "stress": -1},
+    "responses": [
+      "Handle things so they can rest",
+      "Run them a bath or make the bed extra cozy",
+      "Just be quiet and close"
+    ]
+  },
+  {
+    "id": "mood_partner_content_peace",
+    "title": "Peaceful Presence",
+    "description": "{partner} is in a rare state - not excited, not sad, just... content. Present. At peace. They catch you watching them and smile softly.",
+    "conditions": {"partner_mood": ["content", "peaceful"]},
+    "roll_requirement": 7,
+    "effects": {"happiness": 2, "relationship": 2, "stress": -1},
+    "responses": [
+      "Match their energy and just be",
+      "Tell them how beautiful they look right now",
+      "Don't disrupt it - moments like this are rare"
+    ]
+  },
+  {
+    "id": "mood_partner_nervous_support",
+    "title": "Pre-Event Jitters",
+    "description": "{partner} has something coming up they're nervous about. They can't sit still, keep checking things, their mind racing through worst-case scenarios.",
+    "conditions": {"partner_mood": ["nervous", "anxious"]},
+    "roll_requirement": 11,
+    "effects": {"stress": 1, "relationship": 0},
+    "effects_success": {"relationship": 3, "stress": -1, "confidence": 1},
+    "responses": [
+      "Help them prepare so they feel ready",
+      "Distract them until it's time",
+      "Remind them of all the times they've succeeded before"
+    ]
+  },
+  {
+    "id": "mood_partner_playful_mischief",
+    "title": "Mischief Mode",
+    "description": "{partner} has that glint in their eye - the one that means they're about to start something. Before you can react, they've stolen your phone/hat/snack and are running.",
+    "conditions": {"partner_mood": ["playful", "mischievous"]},
+    "roll_requirement": 8,
+    "effects": {"happiness": 3, "stress": -2, "relationship": 2},
+    "responses": [
+      "Chase them and exact revenge",
+      "Play along and escalate",
+      "Act offended but break into laughter"
+    ]
+  },
+  {
+    "id": "stat_low_confidence_doubt",
+    "title": "Imposter Moment",
+    "description": "You catch yourself in the mirror and all you see are flaws. The voice in your head is loud today, telling you you're not enough. {partner} notices you've gone quiet.",
+    "conditions": {"player_stat": {"confidence": {"max": 30}}},
+    "roll_requirement": 14,
+    "effects": {"confidence": -2, "happiness": -2},
+    "effects_success": {"confidence": 3, "relationship": 2, "happiness": 2},
+    "responses": [
+      "Share what you're feeling with them",
+      "Ask them what they see when they look at you",
+      "Let them hold you until the voice quiets"
+    ]
+  },
+  {
+    "id": "stat_high_confidence_shine",
+    "title": "Feeling Yourself",
+    "description": "You woke up feeling good. Really good. {partner} catches you checking yourself out and grins. 'Someone's confident today.'",
+    "conditions": {"player_stat": {"confidence": {"min": 75}}},
+    "roll_requirement": 7,
+    "effects": {"happiness": 2, "relationship": 1},
+    "responses": [
+      "Own it completely",
+      "Share the energy with them",
+      "Channel it into doing something bold"
+    ]
+  },
+  {
+    "id": "stat_low_social_isolated",
+    "title": "Feeling Disconnected",
+    "description": "When did you last talk to anyone besides {partner}? The isolation has crept up on you. You love them, but you miss having a wider world.",
+    "conditions": {"player_stat": {"social_connection": {"max": 30}}},
+    "roll_requirement": 12,
+    "effects": {"happiness": -2, "stress": 1},
+    "effects_success": {"social_connection": 3, "happiness": 2},
+    "responses": [
+      "Reach out to someone you've been meaning to call",
+      "Ask your partner to help you make plans with others",
+      "Join a group or activity to meet new people"
+    ]
+  },
+  {
+    "id": "stat_high_social_full",
+    "title": "Socially Saturated",
+    "description": "You've been so social lately. It's been wonderful but also... a lot. {partner} notices you're peopled-out. They offer a quiet night, just the two of you.",
+    "conditions": {"player_stat": {"social_connection": {"min": 75}}},
+    "roll_requirement": 8,
+    "effects": {"happiness": 2, "stress": -2, "relationship": 2},
+    "responses": [
+      "Gratefully accept the quiet",
+      "Suggest a silent activity together",
+      "Just exist in the same space, no expectations"
+    ]
+  },
+  {
+    "id": "stat_growth_milestone",
+    "title": "Who You've Become",
+    "description": "{partner} brings up something you used to struggle with - and you both realize you don't anymore. When did you grow past that? They look at you with pride.",
+    "conditions": {"player_stat": {"personal_growth": {"min": 50}}},
+    "roll_requirement": 8,
+    "effects": {"happiness": 3, "personal_growth": 2, "relationship": 2, "confidence": 2},
+    "responses": [
+      "Reflect on the journey together",
+      "Acknowledge how they've helped you grow",
+      "Set a new goal now that this one is handled"
+    ]
+  },
+  {
+    "id": "trait_creative_inspiration",
+    "title": "Creative Burst",
+    "description": "{partner}'s creative energy is flowing. They're scribbling, humming, lost in whatever vision has grabbed them. They barely notice you watching, adoringly.",
+    "conditions": {"partner_traits": ["creative", "artistic"]},
+    "roll_requirement": 8,
+    "effects": {"happiness": 2, "relationship": 1},
+    "responses": [
+      "Bring them snacks and leave them to it",
+      "Ask if you can watch or help",
+      "Start your own creative project alongside them"
+    ]
+  },
+  {
+    "id": "trait_stubborn_clash",
+    "title": "Unmovable Object",
+    "description": "You and {partner} have hit an impasse. They've dug in on something and you know from experience they won't budge easily. Neither will you.",
+    "conditions": {"partner_traits": ["stubborn", "determined"]},
+    "roll_requirement": 15,
+    "effects": {"relationship": -2, "stress": 2},
+    "effects_success": {"relationship": 2, "personal_growth": 2},
+    "responses": [
+      "Find a creative third option neither of you considered",
+      "Table it and come back when you're both cooler",
+      "Ask what's really at stake for them"
+    ]
+  },
+  {
+    "id": "trait_adventurous_push",
+    "title": "Comfort Zone Challenge",
+    "description": "{partner} wants to do something that scares you a little. They're not pushing hard, but their excitement is obvious. This matters to them.",
+    "conditions": {"partner_traits": ["adventurous", "spontaneous"]},
+    "roll_requirement": 12,
+    "effects": {"stress": 1},
+    "effects_success": {"happiness": 3, "confidence": 2, "relationship": 3, "personal_growth": 1},
+    "responses": [
+      "Say yes despite the fear",
+      "Negotiate a smaller version to start",
+      "Be honest about your hesitation but try anyway"
+    ]
+  },
+  {
+    "id": "trait_homebody_nest",
+    "title": "Home Is Everything",
+    "description": "{partner} has made your shared space even cozier somehow. New pillows, rearranged furniture, fresh flowers. They beam at you. 'Do you like it?'",
+    "conditions": {"partner_traits": ["homebody", "nurturing"]},
+    "roll_requirement": 7,
+    "effects": {"happiness": 2, "household_harmony": 3, "relationship": 2},
+    "responses": [
+      "Appreciate every detail they changed",
+      "Immediately test out the cozy improvements",
+      "Add your own touch to complement theirs"
+    ]
+  },
+  {
+    "id": "trait_sensitive_careful",
+    "title": "Handle With Care",
+    "description": "Something triggered {partner} today - a movie scene, a song, a memory. They're not falling apart, but they're tender. They need softness right now.",
+    "conditions": {"partner_traits": ["sensitive", "emotional"]},
+    "roll_requirement": 11,
+    "effects": {"relationship": 0, "stress": 1},
+    "effects_success": {"relationship": 4, "stress": -1},
+    "responses": [
+      "Hold space for whatever they're feeling",
+      "Ask if they want to talk or just be held",
+      "Share a tender moment of your own"
+    ]
+  },
+  {
+    "id": "combo_rainy_sad_cocoon",
+    "title": "Rainy Day Blues",
+    "description": "The rain outside mirrors {partner}'s mood. They're curled up small, not quite crying but not okay either. The world feels heavy and gray.",
+    "conditions": {"weather": ["rainy"], "partner_mood": ["sad", "melancholy"]},
+    "roll_requirement": 13,
+    "effects": {"happiness": -1, "relationship": -1},
+    "effects_success": {"relationship": 5, "happiness": 2, "stress": -2},
+    "responses": [
+      "Curl up with them and let the rain be the soundtrack",
+      "Make comfort food and watch something gentle together",
+      "Just hold them - no words needed"
+    ]
+  },
+  {
+    "id": "combo_sunny_happy_joy",
+    "title": "Everything Is Good",
+    "description": "The sun is shining, {partner} is happy, and for once everything just feels right. No crises, no stress - just a genuinely good day with someone you love.",
+    "conditions": {"weather": ["sunny", "perfect"], "partner_mood": ["happy", "excited"]},
+    "roll_requirement": 6,
+    "effects": {"happiness": 4, "relationship": 3, "stress": -3},
+    "responses": [
+      "Soak it in - days like this are rare",
+      "Do something spontaneous to celebrate",
+      "Tell them how happy they make you"
+    ]
+  },
+  {
+    "id": "combo_winter_low_energy_hibernate",
+    "title": "Hibernation Mode",
+    "description": "It's cold, it's dark, and neither of you have any energy. The world wants you to be productive but all you want is to disappear into blankets together.",
+    "conditions": {"season": "winter", "energy": {"max": 40}},
+    "roll_requirement": 8,
+    "effects": {"stress": -2, "relationship": 2},
+    "responses": [
+      "Give in to hibernation - cancel everything",
+      "Take turns being the one to get snacks",
+      "Sleep until you feel human again"
+    ]
+  },
+  {
+    "id": "combo_summer_high_energy_alive",
+    "title": "Summer Energy",
+    "description": "The long summer day and your high energy combine into something electric. {partner} matches your vibe. You both feel invincible.",
+    "conditions": {"season": "summer", "energy": {"min": 80}},
+    "roll_requirement": 8,
+    "effects": {"happiness": 3, "relationship": 2, "stress": -1},
+    "responses": [
+      "Do something you've always wanted to try",
+      "Stay out until the sun sets",
+      "Channel it into something memorable"
+    ]
+  },
+  {
+    "id": "combo_stress_anxious_spiral",
+    "title": "Anxiety Meets Stress",
+    "description": "Your stress is feeding {partner}'s anxiety, which is feeding your stress. You're both spiraling, bouncing off each other's worst fears.",
+    "conditions": {"player_stat": {"stress": {"min": 60}}, "partner_traits": ["anxious"]},
+    "roll_requirement": 16,
+    "effects": {"stress": 3, "relationship": -2, "health": -1},
+    "effects_success": {"stress": -4, "relationship": 3},
+    "responses": [
+      "Name what's happening and break the cycle",
+      "Both take space to regulate, then reconnect",
+      "Focus on one small thing you can control together"
+    ]
+  },
+  {
+    "id": "combo_low_health_nurturing",
+    "title": "Tender Care",
+    "description": "You're not feeling well, and {partner}'s nurturing side has fully activated. They're hovering, checking on you, making sure you have everything you need.",
+    "conditions": {"player_stat": {"health": {"max": 35}}, "partner_traits": ["nurturing", "caring"]},
+    "roll_requirement": 9,
+    "effects": {"health": 2, "relationship": 3, "stress": -1},
+    "responses": [
+      "Let them take care of you completely",
+      "Appreciate them out loud",
+      "Ask them to just stay close"
+    ]
+  },
+  {
+    "id": "time_early_morning_quiet",
+    "title": "Before The World Wakes",
+    "description": "You're both awake before dawn, the world still sleeping. There's something sacred about this hour - just you and {partner} in the quiet dark.",
+    "conditions": {"days_together": {"min": 30}},
+    "roll_requirement": 8,
+    "effects": {"relationship": 2, "happiness": 1, "stress": -1},
+    "responses": [
+      "Watch the sunrise together",
+      "Whisper even though no one's around",
+      "Make coffee and exist in the stillness"
+    ]
+  },
+  {
+    "id": "time_late_night_deep",
+    "title": "3 AM Conversations",
+    "description": "It's late. Neither of you can sleep. In the dark, {partner} starts talking about things they never say in daylight - dreams, fears, hopes.",
+    "conditions": {"relationship": {"min": 50}},
+    "roll_requirement": 10,
+    "effects": {"relationship": 3, "personal_growth": 1},
+    "responses": [
+      "Share your own 3 AM thoughts",
+      "Just listen - this is rare and precious",
+      "Let the conversation drift wherever it wants"
+    ]
+  },
+  {
+    "id": "time_lazy_afternoon",
+    "title": "Sunday Afternoon Energy",
+    "description": "Neither of you has anywhere to be. The afternoon stretches ahead, languid and slow. {partner} is doing nothing beautifully.",
+    "conditions": {"energy": {"max": 60, "min": 30}},
+    "roll_requirement": 7,
+    "effects": {"stress": -2, "happiness": 2, "relationship": 1},
+    "responses": [
+      "Join them in doing nothing",
+      "Suggest a lazy activity - naps, movies, reading",
+      "Just exist in the same space, peacefully parallel"
+    ]
+  },
+  {
+    "id": "love_lang_acts_overwhelmed",
+    "title": "Too Much To Do",
+    "description": "{partner}'s to-do list is crushing them. They show love through doing, and right now they can't do anything. They need you to carry some weight.",
+    "conditions": {"partner_love_language": "acts", "partner_mood": ["stressed", "overwhelmed"]},
+    "roll_requirement": 11,
+    "effects": {"stress": 1},
+    "effects_success": {"relationship": 5, "stress": -2, "household_harmony": 2},
+    "responses": [
+      "Take something off their plate without asking",
+      "Do the thing they've been dreading",
+      "Handle everything so they can rest"
+    ]
+  },
+  {
+    "id": "love_lang_touch_comfort",
+    "title": "Physical Reassurance",
+    "description": "{partner} hasn't said anything's wrong, but they keep finding reasons to touch you - hand on your back, fingers in your hair, leaning against you. They need physical connection.",
+    "conditions": {"partner_love_language": "touch", "partner_mood": ["stressed", "sad", "anxious"]},
+    "roll_requirement": 8,
+    "effects": {"relationship": 3, "stress": -1},
+    "responses": [
+      "Pull them close and hold them",
+      "Give them a long massage",
+      "Don't let go until they're ready"
+    ]
+  },
+  {
+    "id": "love_lang_words_fight_recovery",
+    "title": "Words to Heal",
+    "description": "After tension between you and {partner}, the distance hurts them most because they need to hear you still love them. Actions alone won't bridge this gap.",
+    "conditions": {"partner_love_language": "words", "relationship": {"max": 50}},
+    "roll_requirement": 12,
+    "effects": {"relationship": 0},
+    "effects_success": {"relationship": 5, "stress": -1},
+    "responses": [
+      "Tell them exactly what they mean to you",
+      "Write out everything you've been afraid to say",
+      "Apologize with specific, meaningful words"
+    ]
+  },
+  {
+    "id": "love_lang_time_busy_season",
+    "title": "Craving Connection",
+    "description": "Life has been so busy you've barely had real time with {partner}. They finally have you alone and their relief is palpable. They've missed you.",
+    "conditions": {"partner_love_language": "time", "player_stat": {"stress": {"min": 50}}},
+    "roll_requirement": 10,
+    "effects": {"stress": -2, "relationship": 3, "happiness": 2},
+    "responses": [
+      "Put everything away and be fully present",
+      "Plan protected time for just the two of you",
+      "Make right now count, even if it's short"
+    ]
+  },
+  {
+    "id": "love_lang_gifts_remember",
+    "title": "Remembered",
+    "description": "{partner} brings you something small - something you mentioned wanting months ago. They remembered. The gift isn't expensive but it means everything.",
+    "conditions": {"partner_love_language": "gifts"},
+    "roll_requirement": 7,
+    "effects": {"happiness": 3, "relationship": 4},
+    "responses": [
+      "Show them how much it means that they remembered",
+      "Return the gesture when you can",
+      "Keep it somewhere you'll see it every day"
+    ]
+  },
+  {
+    "id": "daily_moment_coffee",
+    "title": "Morning Ritual",
+    "description": "{partner} brings you coffee exactly the way you like it. They know your order by heart now. It's a small thing that feels like everything.",
+    "conditions": {"days_together": {"min": 14}},
+    "roll_requirement": 6,
+    "effects": {"happiness": 2, "relationship": 1},
+    "responses": [
+      "Thank them sincerely",
+      "Pull them in for a morning kiss",
+      "Make a mental note to return the favor"
+    ]
+  },
+  {
+    "id": "daily_moment_dance",
+    "title": "Kitchen Dance",
+    "description": "A song comes on and {partner} grabs your hand. Before you can protest, you're dancing badly in the kitchen, laughing too hard to care.",
+    "conditions": {"partner_mood": ["happy", "playful", "content"]},
+    "roll_requirement": 7,
+    "effects": {"happiness": 3, "relationship": 2, "stress": -2},
+    "responses": [
+      "Dance terribly and love every second",
+      "Dip them dramatically",
+      "Pull them close for a slow dance instead"
+    ]
+  },
+  {
+    "id": "daily_moment_text",
+    "title": "Thinking of You",
+    "description": "Your phone buzzes. It's {partner}, just checking in: 'Thinking about you. That's all. Love you.' Three lines that make your whole day better.",
+    "conditions": {"relationship": {"min": 40}},
+    "roll_requirement": 6,
+    "effects": {"happiness": 2, "relationship": 1, "stress": -1},
+    "responses": [
+      "Send back something that makes them smile",
+      "Call them just to hear their voice",
+      "Save the message to read again later"
+    ]
+  },
+  {
+    "id": "daily_moment_sleep",
+    "title": "Sleep Sounds",
+    "description": "{partner} has fallen asleep next to you. Their breathing is steady, their face peaceful. Something about watching them sleep, trusting you completely, hits you in the chest.",
+    "conditions": {"relationship": {"min": 50}},
+    "roll_requirement": 6,
+    "effects": {"happiness": 2, "relationship": 2},
+    "responses": [
+      "Watch them for a moment longer",
+      "Adjust the blanket over them gently",
+      "Whisper 'I love you' even though they can't hear"
+    ]
+  },
+  {
+    "id": "milestone_100_days",
+    "title": "100 Days Together",
+    "description": "You realize you and {partner} have been together for 100 days. Not a huge number, but enough to feel real. You've built something.",
+    "conditions": {"days_together": {"min": 100}},
+    "roll_requirement": 8,
+    "effects": {"happiness": 3, "relationship": 3, "personal_growth": 1},
+    "responses": [
+      "Celebrate with something special",
+      "Reflect on how far you've come",
+      "Make plans for the next 100 days"
+    ]
+  },
+  {
+    "id": "milestone_year",
+    "title": "One Year",
+    "description": "365 days. A whole year of loving {partner}, being loved by them. Through seasons and storms and ordinary Tuesdays. You made it.",
+    "conditions": {"days_together": {"min": 365}},
+    "roll_requirement": 7,
+    "effects": {"happiness": 5, "relationship": 5, "personal_growth": 2},
+    "responses": [
+      "Celebrate in a way that's meaningful to you both",
+      "Exchange letters about the year",
+      "Make a memory book of highlights"
+    ]
+  },
+  {
+    "id": "crisis_almost_loss",
+    "title": "Close Call",
+    "description": "Something happened today that made you realize how quickly you could lose {partner}. A near miss, a scare, a reminder of mortality. You're both shaken.",
+    "conditions": {"player_stat": {"stress": {"min": 50}}, "relationship": {"min": 60}},
+    "roll_requirement": 13,
+    "effects": {"stress": 4, "happiness": -2},
+    "effects_success": {"relationship": 6, "stress": -2, "personal_growth": 2},
+    "responses": [
+      "Hold them and don't let go",
+      "Talk about what matters, really matters",
+      "Make promises you intend to keep"
+    ]
+  },
+  {
+    "id": "growth_together",
+    "title": "Growing Together",
+    "description": "Looking back at who you both were when you started, you barely recognize those people. You've changed, grown, evolved - and you've done it together.",
+    "conditions": {"days_together": {"min": 200}, "personal_growth": {"min": 30}},
+    "roll_requirement": 8,
+    "effects": {"relationship": 3, "personal_growth": 2, "happiness": 2},
+    "responses": [
+      "Talk about the journey",
+      "Appreciate the person they've become",
+      "Look forward to who you'll be next"
+    ]
+  },
+  {
+    "id": "weather_wind_restless",
+    "title": "Restless Wind",
+    "description": "The wind is howling, rattling windows. {partner} is restless, pacing. The wild weather has gotten into their bones. They want to do something.",
+    "conditions": {"weather": ["windy", "stormy"]},
+    "roll_requirement": 10,
+    "effects": {"stress": 1},
+    "effects_success": {"happiness": 3, "relationship": 2},
+    "responses": [
+      "Go outside and feel the wind together",
+      "Match their restless energy with something wild",
+      "Channel the energy into something creative"
+    ]
+  },
+  {
+    "id": "mood_partner_vulnerable",
+    "title": "Walls Down",
+    "description": "{partner} is being unusually vulnerable tonight. The walls are down, the masks are off. They're showing you parts they usually keep hidden.",
+    "conditions": {"relationship": {"min": 65}, "partner_mood": ["vulnerable", "open"]},
+    "roll_requirement": 11,
+    "effects": {"relationship": 4, "personal_growth": 1},
+    "responses": [
+      "Honor their trust with your own vulnerability",
+      "Just listen without judgment",
+      "Tell them you love what they're showing you"
+    ]
+  },
+  {
+    "id": "stat_balanced_peace",
+    "title": "Equilibrium",
+    "description": "For once, nothing is on fire. Health is fine, stress is manageable, relationship is solid. {partner} catches your eye. 'Is it okay that things are okay?'",
+    "conditions": {
+      "player_stat": {
+        "health": {"min": 45, "max": 55},
+        "stress": {"min": 45, "max": 55},
+        "happiness": {"min": 45, "max": 55}
+      }
+    },
+    "roll_requirement": 7,
+    "effects": {"happiness": 2, "stress": -2},
+    "responses": [
+      "Enjoy the calm without waiting for the storm",
+      "Use the peace to strengthen foundations",
+      "Just breathe and be grateful"
+    ]
+  },
+  {
+    "id": "trait_loyal_proof",
+    "title": "Unwavering",
+    "description": "Someone says something about you - not nice, not fair. {partner} doesn't hesitate. They defend you fiercely, publicly. They choose you, out loud.",
+    "conditions": {"partner_traits": ["loyal", "protective"]},
+    "roll_requirement": 8,
+    "effects": {"relationship": 5, "confidence": 2, "happiness": 2},
+    "responses": [
+      "Thank them for having your back",
+      "Tell them what their loyalty means to you",
+      "Return the fierce devotion"
+    ]
+  },
+  {
+    "id": "trait_funny_laugh",
+    "title": "Can't Stop Laughing",
+    "description": "{partner} is on a roll. Everything they say is landing and you're laughing so hard your face hurts. They're glowing from making you laugh.",
+    "conditions": {"partner_traits": ["funny", "witty", "playful"]},
+    "roll_requirement": 7,
+    "effects": {"happiness": 4, "relationship": 2, "stress": -3},
+    "responses": [
+      "Let the laughter take over completely",
+      "Try to make them laugh just as hard",
+      "Tell them they're the funniest person you know"
+    ]
+  },
+  {
+    "id": "trait_organized_help",
+    "title": "Systems Save the Day",
+    "description": "{partner}'s organization has saved your ass today. Something important you forgot, they had tracked. Something you lost, they knew where it was.",
+    "conditions": {"partner_traits": ["organized", "practical"]},
+    "roll_requirement": 7,
+    "effects": {"stress": -2, "relationship": 2, "happiness": 1},
+    "responses": [
+      "Express genuine gratitude",
+      "Learn from their systems",
+      "Let them teach you their ways"
+    ]
+  }
+]

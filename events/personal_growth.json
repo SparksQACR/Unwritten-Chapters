@@ -1,0 +1,163 @@
+[
+  {
+    "id": "growth_1",
+    "title": "Perspective Shift",
+    "description": "Something clicks and you see a situation, yourself, or life differently. The shift feels profound.",
+    "roll_requirement": 12,
+    "effects": {
+      "personal_growth": 3,
+      "happiness": 2,
+      "stress": -1
+    },
+    "responses": [
+      "Journal about this realization",
+      "Share it with your partner",
+      "Let it inform your choices going forward"
+    ]
+  },
+  {
+    "id": "growth_2",
+    "title": "Uncomfortable Truth",
+    "description": "You realize something about yourself that's hard to accept. Growth hurts sometimes.",
+    "roll_requirement": 15,
+    "effects": {
+      "personal_growth": 2,
+      "stress": 2,
+      "confidence": -1
+    },
+    "responses": [
+      "Sit with the discomfort",
+      "Talk it through with your partner",
+      "Decide what to do with this awareness"
+    ]
+  },
+  {
+    "id": "growth_3",
+    "title": "Breaking a Pattern",
+    "description": "You catch yourself about to repeat an old pattern - and choose differently. The power of that choice is exhilarating!",
+    "roll_requirement": 14,
+    "effects": {
+      "personal_growth": 3,
+      "confidence": 2,
+      "happiness": 2
+    },
+    "responses": [
+      "Acknowledge this victory",
+      "Notice how it feels to choose differently",
+      "Keep building on this progress"
+    ]
+  },
+  {
+    "id": "growth_4",
+    "title": "Therapy Breakthrough",
+    "description": "If you're in therapy, you have a breakthrough session. If not, you have a moment of deep self-understanding.",
+    "roll_requirement": 13,
+    "effects": {
+      "personal_growth": 3,
+      "health": 1,
+      "stress": -1
+    },
+    "responses": [
+      "Process and integrate the insight",
+      "Share what you're comfortable sharing with your partner",
+      "Appreciate the work you're doing on yourself"
+    ]
+  },
+  {
+    "id": "growth_5",
+    "title": "Forgiveness",
+    "description": "You find it in yourself to forgive - yourself, your partner, or someone else. The weight lifts.",
+    "roll_requirement": 16,
+    "effects": {
+      "personal_growth": 3,
+      "happiness": 2,
+      "stress": -2,
+      "relationship": 2
+    },
+    "responses": [
+      "Feel the freedom that comes with letting go",
+      "Communicate the forgiveness if appropriate",
+      "Notice how much energy you get back"
+    ]
+  },
+  {
+    "id": "growth_6",
+    "title": "Boundary Setting",
+    "description": "You successfully set a boundary you've needed to set for a while. It's uncomfortable but necessary.",
+    "roll_requirement": 14,
+    "effects": {
+      "personal_growth": 2,
+      "stress": -1,
+      "confidence": 2
+    },
+    "responses": [
+      "Hold the boundary even if there's pushback",
+      "Feel proud of advocating for yourself",
+      "Notice the respect it creates"
+    ]
+  },
+  {
+    "id": "growth_7",
+    "title": "Vulnerability Moment",
+    "description": "You allow yourself to be truly vulnerable with your partner. Scary but deepening.",
+    "roll_requirement": 13,
+    "effects": {
+      "relationship": 3,
+      "personal_growth": 2,
+      "stress": 1
+    },
+    "responses": [
+      "Trust the process",
+      "Appreciate their response",
+      "Let this deepen your connection"
+    ]
+  },
+  {
+    "id": "growth_8",
+    "title": "Old Dream Revisited",
+    "description": "You reconnect with a dream or passion you'd set aside. Do you still want it? Can you pursue it now?",
+    "roll_requirement": 12,
+    "effects": {
+      "personal_growth": 2,
+      "happiness": 1,
+      "stress": 1
+    },
+    "responses": [
+      "Explore what it means to you now",
+      "Talk with your partner about making space for it",
+      "Decide if and how to pursue it"
+    ]
+  },
+  {
+    "id": "growth_9",
+    "title": "Asking for Help",
+    "description": "You actually ask for help instead of struggling alone. This is growth!",
+    "roll_requirement": 11,
+    "effects": {
+      "personal_growth": 2,
+      "stress": -1,
+      "social_connection": 1
+    },
+    "responses": [
+      "Accept the help graciously",
+      "Notice it doesn't make you weak",
+      "Remember this for next time"
+    ]
+  },
+  {
+    "id": "growth_10",
+    "title": "Values Clarification",
+    "description": "You get clearer on what actually matters to you. Your values feel more defined and actionable.",
+    "roll_requirement": 13,
+    "effects": {
+      "personal_growth": 3,
+      "confidence": 2,
+      "happiness": 1
+    },
+    "responses": [
+      "Start living more aligned with these values",
+      "Share them with your partner",
+      "Let them guide your decisions"
+    ]
+  }
+]

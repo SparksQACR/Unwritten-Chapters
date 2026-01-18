@@ -1,0 +1,257 @@
+[
+  {
+    "id": "intimate_1",
+    "title": "Playful Flirting",
+    "description": "{partner} catches your eye across the room and gives you that look - the one that says they're thinking about you in ways that make your heart race.",
+    "min_relationship": 55,
+    "roll_requirement": 9,
+    "effects": {
+      "relationship": 2,
+      "happiness": 2,
+      "stress": -1
+    },
+    "responses": [
+      "Return the look with interest and close the distance",
+      "Play coy and make them work for it",
+      "Smile and save the moment for later"
+    ]
+  },
+  {
+    "id": "intimate_2",
+    "title": "Morning Afterglow",
+    "description": "You wake up tangled with {partner}, sunlight filtering in, neither of you in any hurry to move. The world can wait.",
+    "min_relationship": 60,
+    "roll_requirement": 8,
+    "effects": {
+      "relationship": 3,
+      "happiness": 3,
+      "stress": -2
+    },
+    "responses": [
+      "Stay in the moment and enjoy the closeness",
+      "Start the day with slow, deliberate affection",
+      "Whisper something that makes them blush"
+    ]
+  },
+  {
+    "id": "intimate_3",
+    "title": "Tension Building",
+    "description": "There's been a delicious tension between you and {partner} all day. Stolen glances, 'accidental' touches, unspoken promises.",
+    "min_relationship": 60,
+    "roll_requirement": 10,
+    "effects": {
+      "relationship": 2,
+      "happiness": 2
+    },
+    "responses": [
+      "Finally break the tension and pull them close",
+      "Keep building it - anticipation is half the fun",
+      "Ask them what they've been thinking about all day"
+    ]
+  },
+  {
+    "id": "intimate_4",
+    "title": "Vulnerable Request",
+    "description": "{partner} opens up about something they want to try with you - something new, something that requires trust. They're nervous but hopeful.",
+    "min_relationship": 65,
+    "roll_requirement": 12,
+    "effects": {
+      "relationship": 4,
+      "happiness": 2,
+      "confidence": 1
+    },
+    "responses": [
+      "Listen openly and explore their desires together",
+      "Share something you've been wanting too",
+      "Appreciate their trust and take time to discuss it"
+    ]
+  },
+  {
+    "id": "intimate_5",
+    "title": "Spontaneous Passion",
+    "description": "Something about this moment - the way {partner} looks at you, the energy between you - ignites something fierce. Words aren't needed.",
+    "min_relationship": 65,
+    "roll_requirement": 11,
+    "effects": {
+      "relationship": 3,
+      "happiness": 3,
+      "stress": -2
+    },
+    "responses": [
+      "Let the passion take you both where it will",
+      "Take control and show them what you want",
+      "Surrender to their lead completely"
+    ]
+  },
+  {
+    "id": "intimate_6",
+    "title": "Tender Reconnection",
+    "description": "After a busy or stressful period, you and {partner} finally have time alone. There's no rush, just the need to reconnect deeply.",
+    "min_relationship": 60,
+    "roll_requirement": 10,
+    "effects": {
+      "relationship": 4,
+      "happiness": 2,
+      "stress": -3
+    },
+    "responses": [
+      "Focus entirely on making them feel cherished",
+      "Let them take care of you for once",
+      "Take turns showing each other how much you've missed this"
+    ]
+  },
+  {
+    "id": "intimate_7",
+    "title": "Late Night Conversation",
+    "description": "Lying in the dark with {partner}, conversation drifts to deeper waters - desires, fantasies, the things you don't say in daylight.",
+    "min_relationship": 65,
+    "roll_requirement": 11,
+    "effects": {
+      "relationship": 3,
+      "happiness": 1,
+      "confidence": 2
+    },
+    "responses": [
+      "Share something you've never told anyone",
+      "Ask the questions you've been curious about",
+      "Let the conversation become action"
+    ]
+  },
+  {
+    "id": "intimate_8",
+    "title": "Stolen Moment",
+    "description": "Time and place conspire to give you and {partner} a brief, unexpected window of privacy. Do you take it?",
+    "min_relationship": 60,
+    "roll_requirement": 13,
+    "effects": {
+      "relationship": 2,
+      "happiness": 3,
+      "stress": -1
+    },
+    "responses": [
+      "Make the most of every second you have",
+      "Tease them with what's to come later",
+      "Save it - some things are worth waiting for"
+    ]
+  },
+  {
+    "id": "intimate_9",
+    "title": "Celebration Together",
+    "description": "Something good happened, and {partner} wants to celebrate - just the two of you, in a very specific way.",
+    "min_relationship": 60,
+    "roll_requirement": 9,
+    "effects": {
+      "relationship": 3,
+      "happiness": 4,
+      "stress": -1
+    },
+    "responses": [
+      "Let them show you exactly how they want to celebrate",
+      "Take the lead and make it a celebration to remember",
+      "Suggest celebrating in a new way"
+    ]
+  },
+  {
+    "id": "intimate_10",
+    "title": "Comfort and Closeness",
+    "description": "One of you had a hard day. {partner} offers closeness - not to fix it, but to help you feel safe, held, wanted.",
+    "min_relationship": 55,
+    "roll_requirement": 8,
+    "effects": {
+      "relationship": 3,
+      "happiness": 2,
+      "stress": -3
+    },
+    "responses": [
+      "Accept the comfort and let yourself be vulnerable",
+      "Return the care tenfold",
+      "Let it evolve naturally from comfort to something more"
+    ]
+  },
+  {
+    "id": "intimate_11",
+    "title": "Playful Competition",
+    "description": "A game or bet with {partner} has gotten... interesting. The stakes have escalated, and you're both enjoying this entirely too much.",
+    "min_relationship": 60,
+    "roll_requirement": 10,
+    "effects": {
+      "relationship": 2,
+      "happiness": 3,
+      "stress": -1
+    },
+    "responses": [
+      "Go all in to win - winner takes all",
+      "Throw the game and enjoy 'losing'",
+      "Declare a draw and collect on both sides"
+    ]
+  },
+  {
+    "id": "intimate_12",
+    "title": "Words and Touch",
+    "description": "{partner} tells you exactly what they want, voice low, eyes holding yours. Every word is deliberate, designed to make you feel wanted.",
+    "min_relationship": 70,
+    "roll_requirement": 11,
+    "effects": {
+      "relationship": 4,
+      "happiness": 3,
+      "confidence": 2
+    },
+    "responses": [
+      "Give them exactly what they're asking for",
+      "Answer back with your own words and intentions",
+      "Let their words wash over you as you respond"
+    ]
+  },
+  {
+    "id": "intimate_13",
+    "title": "New Experience",
+    "description": "You and {partner} decide to try something neither of you has done before. There's nervous excitement in the air.",
+    "min_relationship": 70,
+    "roll_requirement": 14,
+    "effects": {
+      "relationship": 4,
+      "happiness": 2,
+      "confidence": 2,
+      "personal_growth": 1
+    },
+    "responses": [
+      "Dive in together with open communication",
+      "Start slow and check in often",
+      "Focus on the adventure more than the outcome"
+    ]
+  },
+  {
+    "id": "intimate_14",
+    "title": "Anniversary Intimacy",
+    "description": "It's a meaningful date for you and {partner}. You want to mark it with something special, something that honors your connection.",
+    "min_relationship": 65,
+    "roll_requirement": 10,
+    "effects": {
+      "relationship": 5,
+      "happiness": 3,
+      "stress": -2
+    },
+    "responses": [
+      "Recreate your favorite memory together",
+      "Create a new memory you'll never forget",
+      "Simply be present and let the night unfold"
+    ]
+  },
+  {
+    "id": "intimate_15",
+    "title": "Desire Acknowledged",
+    "description": "{partner} notices you watching them. Instead of looking away, they hold your gaze. 'I know what you're thinking,' they say softly.",
+    "min_relationship": 60,
+    "roll_requirement": 9,
+    "effects": {
+      "relationship": 3,
+      "happiness": 2,
+      "stress": -1
+    },
+    "responses": [
+      "Own it completely and close the distance",
+      "Deny nothing, but make them come to you",
+      "Tell them exactly what you were thinking"
+    ]
+  }
+]
